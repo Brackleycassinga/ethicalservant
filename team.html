@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team - Ethical Servant RDC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .three-col {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .team-card {
+        width: 100%;
+      }
+
+      .team-member-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .team-member-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
+
+      .team-member-info {
+        flex: 1;
+      }
+
+      @media (max-width: 768px) {
+        .team-member-card {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .team-member-image {
+          width: 150px;
+          height: 150px;
+          align-self: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with logo and navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img src="images/logo.png" alt="Ethical Servant RDC Logo" />
+          </div>
+          <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <button
+              class="nav-toggle"
+              id="navToggle"
+              aria-expanded="false"
+              aria-controls="navMenu"
+            >
+              <span class="hamburger-icon"></span>
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="programs.html" class="nav-link">Programs</a></li>
+              <li><a href="team.html" class="nav-link active">Team</a></li>
+              <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Team Section -->
+    <section class="section team-section" id="main-content">
+      <div class="container">
+        <div class="section-header text-center">
+          <h1 class="section-title">Our Team</h1>
+          <p class="section-description">
+            Meet the dedicated professionals driving our mission forward
+          </p>
+        </div>
+
+        <div class="section-header text-center">
+          <h2 class="section-title">Key Members</h2>
+        </div>
+
+        <div class="team-grid three-col">
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Mr. Joel Kapapa"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Mr. Joel Kapapa</h3>
+                <p class="team-member-role">Co Founder and Director</p>
+                <p class="team-member-bio">
+                  Joel Kapapa, is a Fulbright Program alumnus with extensive
+                  experience in education and ethical servant leadership
+                  development. Joel holds two Master's degrees: one in philosophy
+                  from the Catholic University of Congo, where he served as vice
+                  president of the student body; and his second in political
+                  philosophy from the State University of New York at Albany, USA,
+                  where he specialized in Dr. Martin Luther King Jr. ethical
+                  leadership and the common good.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/richardsasa.jpg"
+                alt="Richard Sasa"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Richard Sasa</h3>
+                <p class="team-member-role">Vice Director</p>
+                <p class="team-member-bio">
+                  Richard Sasa is an experienced human resource professional with
+                  diversified experience across various functional areas in
+                  administration (public and private) within multiple industries
+                  (manufacturing, food processing and nonprofit). He has a
+                  master's degree in human resources management from Utah State
+                  University (Utah, USA) and a bachelor's degree in philosophy
+                  from the Catholic University of Congo (UCC, Kinshasa/DRC).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/alicemusele.jpg"
+                alt="Alice Musele"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Alice Musele</h3>
+                <p class="team-member-role">Logistics Manager</p>
+                <p class="team-member-bio">
+                  Alice Musele (Canada) Logistic Manager. Alice holds a bachelor's
+                  degree in psychology and biology from the University of Alberta,
+                  Canada and has extensive experience in leadership and
+                  administration.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Jada Lobela"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Jada Lobela (France)</h3>
+                <p class="team-member-role">Training Facilitator</p>
+                <p class="team-member-bio">
+                  Jada Lobela holds a Bachelor degree in computer science at
+                  University of Bretagne Brest.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Emmanuelle Kapita"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Emmanuelle Kapita</h3>
+                <p class="team-member-role">Monitoring and Evaluation Manager</p>
+                <p class="team-member-bio">
+                  Emmanuelle Kapita-Mba holds a master's degree in International
+                  Commercial Law. With over 15 years of experience in legal
+                  practice, compliance, and project management, she is dedicated
+                  to promoting transparency, accountability, and ethical
+                  governance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Cyrille Kayembe"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Cyrille Kayembe</h3>
+                <p class="team-member-role">Partnership and Fundraising officer</p>
+                <p class="team-member-bio">
+                  Cyrille is very friendly and has an ability to create lasting
+                  intercultural connection, and relationship. He has a bachelor
+                  degree in Philosophy from Saint Augustin University (in
+                  Kinshasa), a bachelor degree in Theology from Saint Eugene
+                  Mazenod Institute ( in Kinshasa), and a Master's degree in Ethic
+                  of Peace, Law and Health Education from Bari University (in
+                  Italy).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Simone Balibuno"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Simone Balibuno</h3>
+                <p class="team-member-role">Financial Resources Manager</p>
+                <p class="team-member-bio">
+                  Simone Balibuno, a financial officer, manages the budget,
+                  accounting and compliance with the project's requirements.
+                  Simone holds a bachelor's degree in financial management and has
+                  professional experience in financial analysis, budget management
+                  and project coordination.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Isaac Kaba"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Isaac Kaba</h3>
+                <p class="team-member-role">Training Facilitator</p>
+                <p class="team-member-bio">
+                  Training Facilitator: Responsible for experts or trainers
+                  leading workshops and conferences on various topics, including
+                  leadership, integrity, and personal development. Isaac Kaba is a
+                  seasoned educator and researcher with expertise in designing and
+                  delivering training programs that bridge academic rigor and
+                  practical application.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Thomas Nkashama"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Thomas Nkashama</h3>
+                <p class="team-member-role">Communication and outreach officer</p>
+                <p class="team-member-bio">
+                  PhD Student at Catholic University of Congo. He is pursuing his
+                  research in logic and language analysis. He graduated in 2022
+                  with a degree in Analytical Philosophy. Interested in tackling
+                  social and political issues.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Carmel Lulihi"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Carmel Lulihi</h3>
+                <p class="team-member-role">Partnership and Event coordinator</p>
+                <p class="team-member-bio">
+                  Carmel is a seasoned public procurement and project management
+                  professional with a decade of experience in infrastructure
+                  projects across sectors such as education, health, and energy.
+                  Holding a Master of Public Administration (MPA), he will bring a
+                  strategic approach to managing the center's projects in general.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Freddy Nzamba"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Freddy Nzamba</h3>
+                <p class="team-member-role">Partnership and fundraising officer</p>
+                <p class="team-member-bio">
+                  Social worker, professional humanitarian and entrepreneur!
+                  Founder of Health Rehabilitation and Human Promotion- web.
+                  HRHP.org ( HRHP- Salt Lake City)and Makasi Rescue
+                  Foundation(MRF)- www.makasireacuedoundation.com ( Kampala Uganda
+                  ).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Samuella Mabita"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Samuella Mabita</h3>
+                <p class="team-member-role">Vice Budget Manager</p>
+                <p class="team-member-bio">
+                  Samuella Mabita is a young economist passionate about innovation
+                  and the development of Congolese businesses. A student at the
+                  Catholic University of Congo, she is rigorously trained to
+                  understand contemporary economic issues.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Rosalie Obula Belamie"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Rosalie Obula Belamie</h3>
+                <p class="team-member-role">Administration officer</p>
+                <p class="team-member-bio">
+                  Rosalie is a Congolese citizen, a 2024 AWE Alumni cohort 1,
+                  Revup Women Entrepreneurship Initiatives in 2023 and JAADEEP
+                  2005 (Digital Entrepreneurship Education Program). She has a
+                  bachelor's degree in computer sciences as an engineer and in
+                  business administration in 2014.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Vany Boto-labarre"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Vany Boto-labarre</h3>
+                <p class="team-member-role">Community liaison Officer</p>
+                <p class="team-member-bio">
+                  Vany is the chairman of VBL LIMITED sarl and the minority
+                  co-owner of the company, which is majority owned by his wife
+                  Rosalie. He is the secretary general of his family NGO APHILMA
+                  working on a volunteering basis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Nelly Mbiya"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Nelly Mbiya</h3>
+                <p class="team-member-role">Communication officer</p>
+                <p class="team-member-bio">
+                  Nelly holds a master degree degree and a higher education
+                  aggregation in Social Communications from the Catholic
+                  University of Congo. Nelly is passionate about media and
+                  literature. She has expertise in managing training-oriented
+                  projects, particularly with the Agence universitaire de la
+                  Francophonie.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-header text-center" style="margin-top: 4rem">
+          <h2 class="section-title">Our Partners</h2>
+        </div>
+
+        <div class="team-grid three-col">
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/dr. breen.jpg"
+                alt="Mr. Riobart E (Rob) Breen"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Mr. Riobart E (Rob) Breen</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  Dr. Ríobart É. Breen is the Director of the Institute for
+                  Transformational and Ecosystem-Based Climate Adaptation (ITECA),
+                  which is dedicated to transformational adaptation to climate
+                  change by promoting climate justice and equity, advancing
+                  nature-based and behavior-based solutions, and preparing the
+                  next generation of climate change leaders.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Mr. Daniel J. Forte"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Mr. Daniel J. Forte</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  Dan holds a Master's Degree from SUNY New Paltz in Education. He
+                  served as an elementary school principal, an assistant director
+                  in charge of educational and professional development for a
+                  large multisite adult educational facility for the developmental
+                  disabled.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Mrs. Susan J. Forte"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Mrs. Susan J. Forte</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  Susan has served in leadership roles in several not-for-profit
+                  organizations primarily providing services and care to
+                  individuals with developmental disabilities. In her last
+                  leadership role in this area, she served as the Director of
+                  Staff Development for an organization with 1200 employees.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="DR. Steve R Branson"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">DR. Steve R Branson</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  Dr. Steve Branson is a distinguished retired pastor with an
+                  illustrious 48-year career in ministry. He served as the pastor
+                  of Village Parkway Baptist Church in San Antonio, Texas, for 29
+                  years, where he provided steadfast spiritual leadership to his
+                  congregation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Dr. Jon Mandle, PHD"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Dr. Jon Mandle, PHD</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  His main interests are in contemporary political philosophy and
+                  ethics, as well as their history. He is co-editor, with David
+                  Reidy, of the Cambridge Rawls Lexicon (2015) and A Companion to
+                  Rawls (Blackwell, 2014), and the author of three books.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/dr.mikeelliott.jpg"
+                alt="Dr. Michael Elliott PHD"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Dr. Michael Elliott PHD</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  Professor and Director of international students, State
+                  University of New York, Albany (USA). As Director of ISSS
+                  (International Student and Scholar Services), Dr. Michael
+                  Elliott brings almost 30 years of experience in the field of
+                  international education.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Mr. Paul Schlett"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Mr. Paul Schlett</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  In obeying his earthly father and his heavenly Father, Paul
+                  earned a Bachelor of Science in Ceramic Engineering at Missouri
+                  Science & Technology (formerly University of Missouri at Rolla)
+                  in 1972 and a Master of Divinity at Mid America Baptist
+                  Theological Seminary in 1993.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Mr. Charles T Kriss"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Mr. Charles T Kriss</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">Esq Attorney at Law; New York, USA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Miss Yelena Kuchma"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Miss Yelena Kuchma, New York, USA</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Mr. Travis Weber"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Mr. Travis Weber</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  Vice President for policy and Government affairs, Family
+                  Research Councel, Washington DC. Travis S. Weber, J.D., LL.M.,
+                  is Vice President for Policy and Government Affairs at Family
+                  Research Council.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/daniel j. forte.jpg"
+                alt="Mr. Robert Osburn"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Mr. Robert Osburn</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  Robert Osburn was the founder (2009) and Executive Director of
+                  the Wilberforce International Institute until September 2020
+                  when he became Senior Fellow. Wilberforce International
+                  Institute is an organization whose mission is to train college
+                  students, especially international students, to be redemptive
+                  change agents.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Antonio Piizii"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Antonio Piizii</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  Antonio Piizzi. Born in Italy, Catholic, lawyer, expert in
+                  labour law and in administrative law, liturgical music choral
+                  singer, film critic, passionate about international politics,
+                  music, literature, painting. Against all forms of racism.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card team-card">
+            <div class="card-body team-member-card">
+              <img
+                src="images/joel.jpeg"
+                alt="Valeria Elliott"
+                class="team-member-image"
+              />
+              <div class="team-member-info">
+                <h3 class="team-member-name">Valeria Elliott</h3>
+                <p class="team-member-role">Partner</p>
+                <p class="team-member-bio">
+                  International Education Innovator, founder of Spanish Inspired
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <img
+                src="images/logo.png"
+                alt="Ethical Servant RDC Logo"
+                style="height: 80px; width: auto; margin-bottom: 1rem"
+              />
+            </div>
+            <h3 class="footer-title">Ethical Servant RDC</h3>
+            <p class="footer-description">
+              Empowering leaders and transforming communities through ethical
+              servant leadership training and development programs in the
+              Democratic Republic of Congo.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="#" aria-label="LinkedIn">LI</a>
+              <a href="#" aria-label="Twitter">TW</a>
+              <a href="#" aria-label="YouTube">YT</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Contact Info</h4>
+            <address class="footer-contact">
+              <p>American Space UPC</p>
+              <p>Kinshasa, DRC</p>
+              <p>Phone: +243 823160 272</p>
+              <p>
+                Email:
+                <a href="mailto:admin@ethicalservantrdc.org"
+                  >admin@ethicalservantrdc.org</a
+                >
+              </p>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Ethical Servant Leadership Training Center RDC. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile navigation toggle
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      navToggle.addEventListener("click", () => {
+        const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", !isExpanded);
+        navMenu.classList.toggle("show");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (event) => {
+        const isClickInsideNav = document
+          .querySelector(".header-content")
+          .contains(event.target);
+        if (!isClickInsideNav && navMenu.classList.contains("show")) {
+          navMenu.classList.remove("show");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      // Add active class to current navigation item
+      const currentLocation =
+        location.pathname.split("/").pop() || "index.html";
+      const navItems = document.querySelectorAll(".nav-link");
+      navItems.forEach((item) => {
+        if (item.getAttribute("href") === currentLocation) {
+          item.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

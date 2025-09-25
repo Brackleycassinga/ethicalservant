@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Leadership Training</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0d47a1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      height: 80px;
+      width: auto;
+    }
+    nav {
+      background: #1565c0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0d47a1;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    .card img {
+      width: 50%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #0d47a1;
+    }
+    .card p.role {
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .card p.desc {
+      padding: 0 10px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* NAVBAR BASE */
+nav {
+  background: #1565c0;
+}
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* HAMBURGER ICON */
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1565c0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>About Us</h1>
+  <p>Meet the Leaders and Partners Behind Our Success</p>
+  <img src="img/LOGO06.png" alt="Leadership Hub Logo" class="logo">
+</header>
+
+<nav>
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html">Leadership Hub</a>
+    </div>
+    <div class="nav-toggle" id="navToggle">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <!-- Key Members Section -->
+  <section id="members">
+    <h2>Key Members</h2>
+    <div class="grid">
+      <!-- Example Member Card -->
+      <div class="card">
+        <img src="img/Joel kapapa.jpg" alt="Joel Kapapa">
+        <h3>Joel Kapapa</h3>
+        <p class="role">Co Founder and Director</p>
+        <p class="desc">Joel Kapapa, is a Fulbright Program alumnus with extensive experience in education and ethical servant leadership development. Joel holds two Master's degrees: one in philosophy from the Catholic University of Congo, where he served as vice president of the student body; and his second in political philosophy from the State University of New York at Albany, USA, where he specialized in Dr. Martin Luther King Jr. ethical leadership and the common good. He was also an adjunct lecturer, in the Department of Languages, Literatures and Cultures while he attended SUNY Albany. 
+ Mr. Kapapa has published multiple articles and authored three books: The power of love, not the love of power (2024), Ethical leadership for greater happiness (2022), and Thomas Aquinas notion of Leadership as a response to the political crisis in the Congo (2019). Joel's proven track record includes teaching, training and empowering young leaders in the DRC and Nigeria. His vision for an ethical servant leadership center stems from his dedication to addressing the leadership crisis in the Democratic Republic of Congo by training ethical servant leaders who embody integrity, love and servanthood in the promotion of democracy, good government and the creation of a just, stable and prosperous Congo.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/RICHARD SASA.jpg" alt="Member Name">
+        <h3>Richard Sasa</h3>
+        <p class="role">Vice Director</p>
+        <p class="desc">Richard Sasa is an experienced human resource professional with diversified experience across various functional areas in administration (public and private) within multiple industries (manufacturing, food processing and nonprofit). He has a master’s degree in human resources management from Utah State University (Utah, USA) and a bachelor’s degree in philosophy from the Catholic University of Congo (UCC, Kinshasa/DRC). He has extensive experience in employee relations, talent acquisition and development, learning, performance management, HR-Business Strategy and organizational leadership and development. He is well-versed in non-profit leadership and development, in an academic environment, especially in international students’ recruitment and retention. He is a skilled, multilingual communicator and leader seeking to bring out the best in others and build a positive, balanced, and successful corporate culture. Richard, for this project, will design, plan, and execute workshops, conferences, and educational activities, ensuring that strategic and educational objectives are met.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Alice02.jpg" alt="Member Name">
+        <h3>Alice Musele</h3>
+        <p class="role">Logistics Manager </p>
+        <p class="desc">Alice Musele (Canada) Logistic Manager. Alice holds a bachelor's degree in psychology and biology from the University of Alberta, Canada and has extensive experience in leadership and administration.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/JADA000.jpg" alt="Member Name">
+        <h3>Jada Lobela (France) </h3>
+        <p class="role">Training Facilitator</p>
+        <p class="desc">Jada Lobela holds a Bachelor degree in computer science at University of Bretagne Brest.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/EMMANUELLE KAPITA.jpg" alt="Member Name">
+        <h3>Emmanuelle Kapita</h3>
+        <p class="role">Monitoring and Evaluation Manager</p>
+        <p class="desc">Emmanuelle Kapita-Mba holds a master’s degree in International Commercial Law. With over 15 years of experience in legal practice, compliance, and project management, she is dedicated to promoting transparency, accountability, and ethical governance. She supports initiatives that empower leaders to serve their communities with integrity, aligning with the Servant Leadership Center's mission to foster collaboration, ethical decision-making, and commitment to the common good</p>
+      </div>
+
+      <div class="card">
+        <img src="img/CYRILLE KAYEMBE.jpg" alt="Member Name">
+        <h3>Cyrille Kayembe</h3>
+        <p class="role">Partnership and Fundraising officer</p>
+        <p class="desc">Cyrille is very friendly and has an ability to create lasting intercultural connection, and relationship. He has a bachelor degree in Philosophy from Saint Augustin University (in Kinshasa), a bachelor degree in Theology from Saint Eugene Mazenod Institute ( in Kinshasa), and a Master’s degree in Ethic of Peace, Law and Health Education from Bari University (in Italy). He has a certificate in Korean Language and culture (South Korea). As a polyglote, he speaks 9 languages . Also Cyrille has leadership experience in training youth and counselling married couples.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Simone02.jpg" alt="Member Name">
+        <h3>Simone Balibuno</h3>
+        <p class="role">Financial Resources Manager</p>
+        <p class="desc">Simone Balibuno, a financial officer, manages the budget, accounting and compliance with the project's requirements. Simone holds a bachelor's degree in financial management and has professional experience in financial analysis, budget management and project coordination. Her solid analytical skills and her experience as a financial advisor in some companies make her an asset for financial operations. Simone's responsibilities are essential for all phases. She speaks French fluently and quite well English.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/MR. ISAAC KABA.jpg" alt="Member Name">
+        <h3>Isaac Kaba</h3>
+        <p class="role">Training Facilitator </p>
+        <p class="desc">Training Facilitator: Responsible for experts or trainers leading workshops and conferences on various topics, including leadership, integrity, and personal development. Isaac Kaba is a seasoned educator and researcher with expertise in designing and delivering training programs that bridge academic rigor and practical application. He holds a BSc in Pharmaceutical Sciences (Summa Cum Laude) from the University of Toledo and is currently pursuing a PhD in Chemistry at the University of California-Berkeley. Isaac has experience as a Graduate Student Instructor, where he effectively teach and communicates complex concepts to diverse audiences. He is also fluent in French and English.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/THOMAS NKANSHAMA.jpg" alt="Member Name">
+        <h3>Thomas Nkashama</h3>
+        <p class="role">Communication and outreach officer</p>
+        <p class="desc"> PhD Student at Catholic University of Congo. He is pursuing his research in logic and language analysis. He graduated in 2022 with a degree in Analytical Philosophy. Interested in tackling social and political issues. He also holds a certificate in politics studies at Konrad Adenauer School for Young Politician (KASYP) in Benin. Focused on strengthening young people capacities in leadership and communications skills. Accustomed to the media and having sufficient skills in communication, Thomas will assume with skills and responsibilities the communication charges of the center. This aligns with his previous positions as the former President of the Student Body at the Catholic University of Congo and a former Spokesman and Communications officer for the Student Body in the Democratic Republic of Congo. His passion for research and training guided him to the Center for Research and Training in Applied Ethics (CRFEA) at the University of Kinshasa, where he serves as an Assistant Lecturer-Researcher.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/CARMEL.jpeg" alt="Member Name">
+        <h3>Carmel Lulihi</h3>
+        <p class="role">Partnneship and Event coordinator </p>
+        <p class="desc">Carmel is a seasoned public procurement and project management professional with a decade of experience in infrastructure projects across sectors such as education, health, and energy. Holding a Master of Public Administration (MPA), he will bring a strategic approach to managing the center’s projects in general. Furthermore, his expertise includes training and youth mentoring, which will enhance the center's best practices and overall development.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/FREDDY NZAMBA.jpg" alt="Member Name">
+        <h3>Freddy Nzamba</h3>
+        <p class="role">partenership and fundraising officer</p>
+        <p class="desc">Social worker , professional humanitarian and entrepreneur! Founder of Health Rehabilitation and Human Promotion- web. HRHP.org ( HRHP- Salt Lake City)and Makasi Rescue Foundation(MRF)- www.makasireacuedoundation.com ( Kampala Uganda ).
+          He holds a bachelor degree in philosophy( Urbaniana University-Rome) ; leadership Westside Leadership institute( Utah University-US ); leadership in Salt Lake Community College ( Utah-Us). With over 12 years of work experience in Nonprofit organizations first as the Executive Director of MRF and currently as case manager for International Rescue Foundation( IRC-US)focusing on refugees and immigrants.
+          He strives to promote the social cultural and economic right of refugees and immigrants through employment search , accessibility to credit for economic empowerment towards their self-reliance ..</p>
+      </div>
+
+
+<div class="card">
+        <img src="img/Samuella02.jpg" alt="Member Name">
+        <h3>Samuella Mabita</h3>
+        <p class="role">Vice Budget Manager</p>
+        <p class="desc">Samuella Mabita is a young economist passionate about innovation and the development of Congolese businesses. A student at the Catholic University of Congo, she is rigorously trained to understand contemporary economic issues. Trained in entrepreneurship at the INNP in Kinshasa, she specialized in digital tools and financing strategies for startups. Her internship at the Permanent Accounting Council in Congo allowed her to strengthen her skills in management and financial analysis. Today, Vice Budget Manager, Samuella ensures the consistency and transparency of budgetary choices. Certified in IT, she operates with ease in connected environments. Curious, determined, and forward-looking, she embodies a generation of young leaders ready to transform the economic environment of Congo.</p>
+      </div>
+      
+      <div class="card">
+        <img src="img/Rosalie02.jpg" alt="Member Name">
+        <h3>Rosalie Obula Belamie </h3>
+        <p class="role">Administration officer</p>
+        <p class="desc">Rosalie is a Congolese citizen, a 2024 AWE Alumni cohort 1, Revup Women Entrepreneurship Initiatives in 2023 and JAADEEP 2005 (Digital Entrepreneurship Education Program). She has a bachelor’s degree in computer sciences as an engineer and in business administration in 2014. She has got work experience in finance, administration and human resources in various private companies and NGOs for over 7 years. Integrated to IDG (Iniative de Genève dans le pays des Grands lacs ) to share humanitarian value and empathy to tackle ethnic discrimination.
+
+          In 2021, along with her husband their have started a start-up company VBL LIMITED sarl, where she is the majority shareholder. The company operates in the renewable energy sector and focusing on environmental protection. Volunteering is a passion for Rosalie since 2007 she has been volunteering with Sant'Egidio community mentoring children especially from deprive families and those living with disabilities in a school of peace programme.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Vani.jpg" alt="Member Name">
+        <h3>Vany Boto-labarre</h3>
+        <p class="role">Community liaison Officer</p>
+        <p class="desc">Vany is the chairman of VBL LIMITED sarl and the minority co-owner of the company, which is majority owned by his wife Rosalie. He is the secretary general of his family NGO APHILMA working on a volunteering basis.
+
+          Graduated in BA (Hon) French degree in 2009 at the university of Bradford, UK and a Professional Development Level HE4 Framework for Higher Education Qualification in “Introduction to Regeneration & Sustainable Communities” in 2011 at the university of Bolton, UK. Following his degree Vany worked as a volunteer for Bolton Citizens Advice Bureau as an Administration & Generalist Advisor to gain valuable work experience, later securing paid employment within the public sector at the Neighbourhood Management Team for Bolton Council, working as an assistant administration & community liaison officer, before moving into the private sector as sale advisor covering the French speaking market</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Nelly.jpg" alt="Member Name">
+        <h3>Nelly Mbiya </h3>
+        <p class="role">Communication officer</p>
+        <p class="desc">Nelly holds a master degree degree and a higher education aggregation in Social Communications from the Catholic University of Congo. Nelly is passionate about media and literature. She has expertise in managing training-oriented projects, particularly with the Agence universitaire de la Francophonie</p>
+      </div>
+      <!-- Add more members here -->
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section id="partners" style="margin-top: 50px;">
+    <h2>Our Partners</h2>
+    <div class="grid">
+      <!-- Example Partner Card -->
+      <div class="card">
+        <img src="img/DR. BREEN.jpg" alt="Partner Company">
+        <h3>Mr. Riobart E (Rob) Breen</h3>
+        <p class="role">Partner</p>
+        <p class="desc">Dr. Ríobart É. Breen is the Director of the Institute for Transformational and Ecosystem-Based Climate Adaptation (ITECA), which is dedicated to transformational adaptation to climate change by promoting climate justice and equity, advancing nature-based and behavior-based solutions, and preparing the next generation of climate change leaders, including through community engagement and service learning. He is also a lecturer and faculty advisor for the Biodiversity, Conservation, and Policy program. He led the Climate Adaptation Team in the Office of Climate Change at the New York State Department of Environmental Conservation and was an Environmental Policy Analyst for the Ocean and Great Lakes Unit of the New York State Coastal Management Program. Dr. Breen's interdisciplinary work addresses the "complex problems" of adaptive, resilient, and sustainable community transitions in the face of anthropogenic climate disruption and hyperdevelopment, with a focus on biodiversity conservation, urban and community forestry, coastal watershed management, collaborative adaptive governance, and generational equity. He holds an MA and PhD in Environmental and Natural Resource Policy and Administration. Creator of the climate change simulation and scenario game EarthQuest, he is a member of the ecoregional think tank Anam Circle and has led the White Mountain Youth Corps and the Coconino Rural Environment Corps. He is also the founder of the Anam Earth Center for Sustainability and Culture, a community-based nonprofit organization. Dr. Breen lives at Glendara Homestead with his family and practices regenerative agroecology and sustainable living.
+          Research Interests
+Natural Resource Policy and Planning
+Environmental Policy and Planning
+Climate Change Adaptation and Resilience
+Ecosystem-Based Adaptation and Nature-Based Solutions
+Environmental Governance and Leadership
+Sustainability
+Climate Justice and Environmental Equity
+        </p>
+
+      </div>
+
+      <div class="card">
+        <img src="img/DANIEL J. FORTE.jpg" alt="Partner Company">
+        <h3>Mr. Daniel J. Forte</h3>
+        <p class="role">Partner</p>
+        <p class="desc">Dan holds a Master’s Degree from SUNY New Paltz in Education. He served as an elementary school principal, an assistant director in charge of educational and professional development for a large multisite adult educational facility for the developmental disabled, helped develop and implement leadership training for a national not-for-profit organization working with international students and scholars and assisted pastors in developing church leaders. His present passion is developing loving servant leadership in the international church.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/SUSAN S. FORTE.jpg" alt="Partner Company">
+        <h3>Mrs. Susan J. Forte</h3>
+        <p class="role">Partner</p>
+        <p class="desc">Susan has served in leadership roles in several not-for-profit organizations primarily providing services and care to individuals with developmental disabilities. In her last leadership role in this area, she served as the Director of Staff Development for an organization with 1200 employees. She oversaw the staff training component of the organization working with the various departments in the provision of mandated state and federal trainings and those necessary for the orientation of new employees. Susan also created and implemented leadership development curriculum and follow-up for all levels of leadership throughout the organization – from middle managers to senior leaders. In addition, Susan designed and facilitated a multiple agency program for employee orientation that remained in effect for many years.
+
+          Recently Susan helped develop and launch a leadership training curriculum for a national not-for-profit Christian organization working with international students and scholars. She currently has a passion for developing and implementing national and international leadership training programs </p>
+      </div>
+
+      <div class="card">
+        <img src="img/DR.STEVE BRANSON.jpg" alt="Partner Company">
+        <h3>DR. Steve R Branson</h3>
+        <p class="role">Partner</p>
+        <p class="desc">Dr. Steve Branson is a distinguished retired pastor with an illustrious 48-year career in ministry. He served as the pastor of Village Parkway Baptist Church in San Antonio, Texas, for 29 years, where he provided steadfast spiritual leadership to his congregation. Even in retirement, Dr. Branson remains actively engaged in ministry, preaching in churches worldwide and teaching at Baptist seminaries in Havana, Cuba, and Arusha, Tanzania.
+          A committed educator, Dr. Branson has served as an adjunct professor at Southwestern Baptist Theological Seminary for 20 years and previously held a similar role at Wayland Baptist University in Plainview, Texas. His academic contributions extend internationally, having been invited to speak at the prestigious Oxford Round Table at Oxford University in 2004 and 2007.
+          Dr. Branson’s leadership extends beyond the pulpit. For 25 years, he served as Chairman of the Board for Life Choices Medical and Pregnancy Care Center in San Antonio, demonstrating his dedication to community service and support for families. In recognition of his advocacy for religious freedom, particularly for men in the military, he was honored with the Jonas Clark Award by the Family Research Council in 2014.
+          Dr. Branson is married to his wife, Jan, and is the proud father of three children and grandfather to eight grandchildren. He has had a lifelong commitment to faith, education, and service.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/DR. JON MANDLE.jpg" alt="Partner Company">
+        <h3>Dr. Jon Mandle, PHD</h3>
+        <p class="role">Partner</p>
+        <p class="desc">His main interests are in contemporary political philosophy and ethics, as well as their history. He is co-editor, with David Reidy, of the Cambridge Rawls Lexicon (2015) and A Companion to Rawls (Blackwell, 2014), and the author of three books: Rawls's A Theory of Justice: An Introduction (2009), Global Justice (2006), and What's Left of Liberalism? An Interpretation and Defense of Justice as Fairness (2000). He has published articles on the work of John Rawls, global justice, public reason, Rousseau, Kant, metaethics, and other topics. He teaches, among other topics, contemporary ethical and political philosophy, the history of ethics and political philosophy, and global justice. He was Chair of the Department from 2004 to 2013.
+
+          REPRESENTATIVE PUBLICATIONS
+          "Pragmatism and Human Rights" in Bloomsbury Handbook of Global Justice and East Asian Philosophy, Janusz Salamon and Hsin-Wen Lee, eds. (Bloomsbury, 2024).
+          
+          "Maxims: Responsibility and Causal Laws," Kantian Review 29 (2024).
+          
+          "The Meaning of Justice" in John Rawls and the Common Good, Roberto Luppi, ed. (Routlege, 2022).
+          
+          "Wealth Should Be Redistributed" in Problems in Value Theory, Steven Cowan, ed. (Bloomsbury, 2020).
+          
+          Co-edited with David Reidy, The Cambridge Rawls Lexicon (Cambridge University Press, 2015)</p>
+      </div>
+
+      <div class="card">
+        <img src="img/DR. MIKE ELLIOTT.jpg" alt="Partner Company">
+        <h3>Dr. Michael Elliott PHD</h3>
+        <p class="role">Partner</p>
+        <p class="desc">Professor and Director of international students, State University of New York, Albany (USA)
+          <p>As Director of ISSS (International Student and Scholar Services), Dr. Michael Elliott brings almost 30 years of experience in the field of international education. His areas of interest and research include international student and scholar success, leadership development, and strengths-based education. 
+            Michael earned his PhD in leadership studies and his master’s degrees in both international studies and education. He is also a lecturer in the departments of Educational Policy and Leadership, Globalization Studies, and Undergraduate Studies. 
+            Michael presents at NAFSA conferences, co-authored "From Departing to Achieving: Keys to Success for International Students in U.S. Colleges and Universities,". He was a Fulbright Scholar-Administrator, Japan award recipient; worked for USAID in South Africa; and taught high school biology/physics in Peace Corps Kénya .At the Ethical Servant Leadership Center, Dr. Michael Elliot will be teaching about servant and transformational leadership models; and traits and perils of toxic/destructive leadership.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/MR PAUL SCHLETT.jpg" alt="Partner Company">
+        <h3>Mr. Paul Schlett</h3>
+        <p class="role">Partner</p>
+        <p class="desc">In obeying his earthly father and his heavenly Father, Paul earned a Bachelor of Science in Ceramic Engineering at Missouri Science & Technology (formerly University of Missouri at Rolla) in 1972 and a Master of Divinity at Mid America Baptist Theological Seminary in 1993. He developed refractory products at Harbison Walker Refractories for 9 years and then worked for Exxon Research & Engineering and Valero Energy for 17 years. He served as a bi-vocational pastor in the inner city of Schenectady, NY. As a refractory engineer, he taught courses and provided refractory lining system designs in oil refining equipment in 21 countries. His greatest joy in life as husband, engineer and pastor has been to apply God’s wonderful truths from both creation and the Bible in every aspect of life. God is so good</p>
+      </div>
+
+      <div class="card">
+        <img src="img/MR CHARLES KRISS.jpg" alt="Partner Company">
+        <h3>Mr. Charles T Kriss</h3>
+        <p class="role">Partner</p>
+        <p class="desc">Esq Attorney at Law; New York, USA</p>
+      </div>
+
+      <div class="card">
+        <img src="img/MRS YELENA KUCHMA.jpg" alt="Partner Company">
+        <h3>Miss Yelena Kuchma, New York, USA</h3>
+        <p class="role">Partner</p>
+        <p class="desc"></p>
+      </div>
+
+      <div class="card">
+        <img src="img/MR TRAVIS WEBER.jpg" alt="Partner Company">
+        <h3>Mr. Travis Weber</h3>
+        <p class="role">Partner</p>
+        <p class="desc"><p>Vice President for policy and Government affairs, Family Reasearch Councel, Washington DC</p>
+        <p>Travis S. Weber, J.D., LL.M., is Vice President for Policy and Government Affairs at Family Research Council, where he oversees research, policy development, and engagement with government officials in championing FRC’s core mission priorities of faith, family, and freedom. <p>As part of his role, he has overseen the strategic development of numerous written submissions and filings to government bodies, including international organizations, federal agencies, and the U.S. Congress. Travis has written and spoken widely on policy and legal issues related to faith, family, and freedom both in the U.S. and around the world. He has testified on religious freedom before the Military Personnel Subcommittee of the House Armed Service Committee, conducting religious freedom and human rights training in places like Iraq, and led pro-family and freedom conversations at strategic dialogues and conventions at a regional and global level. In the course of his work, Travis has examined the impact on religious freedom within the United States that has arisen from shifting cultural attitudes toward faith and family values. Globally, he has raised awareness about cases of genocide around the world, examined the effect on international human rights law when it is detached from its moral and religious grounding, and surveyed the impact on family and moral values that comes from shifting religious trends in a society. </p>
+
+ 
+
+        <p> Before joining FRC, Travis practiced law in the areas of civil rights, criminal defense, and military law. He holds a J.D. from Regent University School of Law, where he served as the Notes & Comments Editor on Law Review. Travis also graduated with an LL.M. in International Law (with distinction) and a Certificate in International Human Rights Law from Georgetown University Law Center. </p>
+        
+         
+        
+         <p> Travis previously served in the U.S. Navy as a pilot after graduating from the U.S. Naval Academy, where he was captain of the Intercollegiate Sailing Team and a two-time College Sailing All-American. </p>
+         </p>
+      </div>
+
+      <div class="card">
+        <img src="img/JUNE 2016 BOB OSBURN.jpg" alt="Partner Company">
+        <h3>Mr. Robert Osburn</h3>
+        <p class="role">Partner</p>
+        <p class="desc">>Robert Osburn was the founder (2009) and Executive Director of the Wilberforce International Institute until September 2020 when he became Senior Fellow. Wilberforce International Institute is an organization whose mission is to train college students, especially international students, to be redemptive change agents in their home societies and workplaces.  Under the auspices of the Institute, he has personally mentored 35 students from 17 different countries, most of them graduate students or visiting scholars, and has organized many conferences for students and academics. Over the past 29 years, he has traveled to 29 countries, primarily to meet and advise mentees.
+
+          Previously, he was the Executive Director of The MacLaurin Institute, a Christian study center serving the University of Minnesota campus community, from 1996 until 2009.  Prior to that, he served as Director of International Programs from 1993 to 1996.  Under his leadership, he organized three international conferences: World View for World Healing Conference (1998), Mini-World View for World Healing Conference (1999), and African Nation-Builders Workshop (2000), and invited over 40 Christian scholars to lecture at the University of Minnesota.  He speaks on comparative worldviews, Christians and academia, bribery and corruption, and nation-building from a Christian perspective.  He has taught courses as an adjunct faculty member in the Department of Organizational Leadership, Policy, and Development at the University of Minnesota, including a course on religion, ethics, and educational policy (2008-2014) and another on religion and international development (2010-2011).   He was also an adjunct faculty member at William Carey International University where he served as a PhD adviser.  He teaches online courses on comparative worldviews and anti-corruption through The New International University and Wilberforce International Institutte.
+          
+          From 1985 to 1990, he served as a campus minister with International Students, Inc. in the Twin Cities, and from 1990 to 1993 as Twin Cities Director.  
+          
+          Based on his research on the religious experiences of Buddhist, Muslim and Christian international students, he received his PhD in comparative and international development education at the University of Minnesota in November 2005.  He holds a BA (1973) from the University of Michigan and a Master’s in Theology (ThM) (1978) from Dallas Theological Seminary.  He has been published in The Minnesota Daily, Minneapolis Star-Tribune, University of St Thomas Journal of Law and Public Policy, Mission Frontiers, American Experiment Quarterly, and Journal of Church and State. In May 2016, his book on bribery and corruption, Taming the Beast: Can We Bridle the Culture of Corruption? was published.  More recently, his research “Religious, Frustrated, and a Long Way from Home: Religiously-Active International Students and Academicians’ Responses to Religion” was published in the 2017 edited volume Christianity and the Secular Border Patrol: The Loss of Judeo-Christian Knowledge. His most recent book is Developing Redemptive Change Agents: Discipleship That Helps Nations Flourish Rather Than Flounder.  His areas of research include religion and educational policy, intellectual diversity in higher education, poverty, international higher education, corruption and bribery, and religion and international development.  He blogs at www.wilberforceii.org.
+          
+          He has served as a board member with the Association of Christians Ministering to Internationals (1994-1996, 2006-2012), where he served as Vice Chair (2010-11); with the International Council for Education Development (as a board member, 2003-2014, and as Chair, 2003-2007); with the Consortium of Christian Study Centers (2008-present), for which he is also a founding board member and secretary; and with Trinity Education Global (board member 2014-present). He has served in numerous volunteer positions at Grace Church of Roseville (1989 - 2018) and NAFSA: Association of International Educators (1993-2008).  He has been an Advisor to Truth in Business, a student organization at the U of Minnesota (2006-2013), and has been a member of the Council of Religious Advisors (1987-1999) and of the University Christian Ministers Association (2000-2010).  He has also served as a board member of the latter organization (2005-2008), the last year of which he served as the president.  He served on the planning committee for the November 12-14, 2012 International Student Ministry Global Consultation in Chicago. He was a member of the Comparative and International Education Society (2013- 2024), the International Network for Christian Higher Education (2001-present), the Society of Christian Scholars (2018 – present), and the Association of Christians Ministering among Internationals (1989 – present).
+          
+          He is the father of four sons, grandfather to thirteen, and has been married to Susan for 50 years.  Bob and Susan reside in Stillwater, Minnesota, a suburb of the Twin Cities.
+          
+          Darrow Miller, author of many books including Discipling Nations (1996) and Emancipating the World (2012), has offered this unsolicited testimonial: “Dr. Osburn’s life and vision is a gift from God to so many international students studying in the United States.”</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Antonio Piizzi.jpg" alt="Partner Company">
+        <h3>Antonio Piizii</h3>
+        <p class="role">Partner</p>
+        <p class="desc">Antonio Piizzi. Born in Italy, Catholic, lawyer, expert in labour law and in administrative law, liturgical music choral singer, film critic, passionate about international politics, music, literature, painting. Against all forms of racism</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Valeria.jpeg" alt="Partner Company">
+        <h3>Valeria Elliott</h3>
+        <p class="role">Partner</p>
+        <p class="desc">International Education Innovator, founder of Spanish Inspired</p>
+      </div>
+
+     
+      <!-- Add more partners here -->
+    </div>
+  </section>
+</div>
+
+<section class="container" id="contact">
+
+  <p></p>
+  <p></p>
+</section>
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+</body>
+</html>

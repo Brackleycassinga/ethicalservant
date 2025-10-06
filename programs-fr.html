@@ -726,32 +726,28 @@
         langButtons.forEach(btn => {
             btn.addEventListener('click', function() {
                 const lang = this.getAttribute('data-lang');
-                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
                 // Store language preference
                 localStorage.setItem('preferredLanguage', lang);
 
-                // Redirect to appropriate language version
+                // Update active state
+                langButtons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
                 if (lang === 'fr') {
-                    // Redirect to French version
-                    if (currentPage === 'index.html' || currentPage === '') {
-                        window.location.href = 'index-fr.html';
-                    } else if (currentPage.includes('-fr.html')) {
-                        // Already on French page, do nothing
-                    } else {
-                        // For other pages, add -fr before .html
-                        const frPage = currentPage.replace('.html', '-fr.html');
-                        window.location.href = frPage;
-                    }
-                } else {
-                    // Redirect to English version
-                    if (currentPage.includes('-fr.html')) {
-                        const enPage = currentPage.replace('-fr.html', '.html');
-                        window.location.href = enPage;
-                    }
+                    // Show message that French version is coming soon
+                    alert('🇫🇷 La version française est en cours de développement.\n\nFrench version is under development and coming soon!\n\nVeuillez patienter / Please stay tuned.');
                 }
             });
         });
+
+        // Set active language button based on saved preference
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        const activeLangBtn = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);
+        if (activeLangBtn) {
+            langButtons.forEach(b => b.classList.remove('active'));
+            activeLangBtn.classList.add('active');
+        }
     </script>
 </body>
 </html>

@@ -212,6 +212,43 @@ p {
   border-radius: 2px;
 }
 
+/* Language Switcher */
+.language-switcher {
+  display: none; /* Disabled */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--medium-text);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.lang-btn .flag {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: var(--orange);
+  background: var(--light-gray);
+}
+
+.lang-btn.active {
+  color: var(--orange);
+  font-weight: 600;
+}
+
 .nav-toggle {
   display: none;
   background: none;

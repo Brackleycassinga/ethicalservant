@@ -1,757 +1,326 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethical Servant DRC - Empowering Leaders, Transforming Futures</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leadership Training</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+  background: #0d47a1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* needed for absolute positioning of logo */
+}
+
+header .logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 80px; /* adjust size */
+  width: auto;
+}
+    nav {
+      background: #1565c0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('img/HERO4.jpg') center/cover;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      font-size: 2rem;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0d47a1;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #1565c0;
+    }
+    /* Modal Styling */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      width: 90%;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #666;
+    }
+    /* NAVBAR BASE */
+nav {
+  background: #1565c0;
+}
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* HAMBURGER ICON */
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1565c0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+  </style>
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Header with logo and navigation -->
-    <header class="site-header">
-        <div class="container">
-            <div style="background-color: #ffebee; padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 4px;">
-                <p style="color: #d32f2f; font-weight: 600; margin: 0; font-size: 0.9rem;">⚠️ Our website is currently under construction - Work in Progress!</p>
-            </div>
-            <div class="header-content">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Ethical Servant DRC Logo">
-                </div>
-                <nav class="main-nav" role="navigation" aria-label="Main navigation">
-                    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-                        <span class="hamburger-icon"></span>
-                        <span class="sr-only">Toggle navigation</span>
-                    </button>
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html" class="nav-link active">Home</a></li>
-                        <li><a href="about.html" class="nav-link">About</a></li>
-                        <li><a href="programs.html" class="nav-link">Programs</a></li>
-                        <li><a href="team.html" class="nav-link">Team</a></li>
-                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                        <li><a href="donation.html" class="nav-link">Donate</a></li>
-                        <li><a href="contact.html" class="nav-link">Contact</a></li>
-                        <li class="language-switcher">
-                            <button class="lang-btn active" data-lang="en">
-                                <span class="flag">🇬🇧</span> EN
-                            </button>
-                            <span style="color: var(--text-gray);">|</span>
-                            <button class="lang-btn" data-lang="fr">
-                                <span class="flag">🇫🇷</span> FR
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<header>
+  <h1>Ethical Servant Leadership Training Center</h1>
+  <p>Empowering Leaders, Transforming Futures</p>
+  <img src="img/LOGO06.png" alt="Leadership Hub Logo" class="logo">
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="main-content">
-        <div class="hero-slider">
-            <div class="slide active">
-                <div class="slide-content">
-                    <img src="images/Gemini_Generated_Image_1ucld61ucld61ucl.png" alt="Leadership Training">
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="images/Gemini_Generated_Image_9eiade9eiade9eia.png" alt="Community Development">
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="images/joel_present.jpeg" alt="Joel Teaching">
-                </div>
-            </div>
-            <div class="slider-nav">
-                <button class="prev-btn" aria-label="Previous slide">❮</button>
-                <button class="next-btn" aria-label="Next slide">❯</button>
-            </div>
-            <div class="slider-dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
-            </div>
-        </div>
-        <div class="container">
-            <div class="hero-content-wrapper">
-                <div class="hero-content">
-                    <h1 class="hero-title">Creating a Just and Peaceful Society</h1>
-                    <p class="hero-subtitle">Through the power of love, integrity, and ethical servant leadership, we are transforming communities and building a brighter future for the Democratic Republic of Congo.</p>
-                    <div class="hero-buttons">
-                        <a href="programs.html" class="btn btn-primary">Our Programs <i class="fas fa-arrow-right"></i></a>
-                        <a href="about.html" class="btn btn-secondary">Learn More <i class="fas fa-info-circle"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<nav>
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html">Leadership Hub</a>
+    </div>
+    <div class="nav-toggle" id="navToggle">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Bible Verse Section -->
-    <section class="section" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%); padding: 4rem 0;">
-        <div class="container">
-            <div style="text-align: center; color: var(--white); max-width: 900px; margin: 0 auto;">
-                <h2 style="color: var(--white); font-size: 2rem; margin-bottom: 2rem; font-style: italic;">Our Foundation</h2>
-                <blockquote style="border-left: 4px solid var(--orange); padding-left: 1.5rem; margin: 0 0 2rem 0; text-align: left;">
-                    <p style="font-size: 1.3rem; line-height: 1.8; color: rgba(255, 255, 255, 0.95); margin-bottom: 0.5rem; font-style: italic;">
-                        "The son of man came to serve others, not to be served."
-                    </p>
-                    <footer style="color: var(--orange); font-weight: 600; font-size: 1.1rem;">— Matthew 20:28</footer>
-                </blockquote>
-                <blockquote style="border-left: 4px solid var(--orange); padding-left: 1.5rem; margin: 0; text-align: left;">
-                    <p style="font-size: 1.3rem; line-height: 1.8; color: rgba(255, 255, 255, 0.95); margin-bottom: 0.5rem; font-style: italic;">
-                        "The greatest among you must be your servant."
-                    </p>
-                    <footer style="color: var(--orange); font-weight: 600; font-size: 1.1rem;">— Matthew 23:11</footer>
-                </blockquote>
-            </div>
-        </div>
-    </section>
 
-    <!-- About ESLC Section -->
-    <section class="section" style="background: var(--light-gray); padding: 3rem 0;">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">About Us</h2>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
-                    The 'ETHICAL SERVANT LEADERSHIP CENTER', abbreviated as "CLSE asbl' or 'ETHICAL SERVANT LEADERSHIP CENTER", 'ESLC asbl', in English, is a non-profit association created by Congolese citizens concerned with contributing effectively to the major challenges facing the society in which they live, particularly issues of ethical leadership and corruption.
-                </p>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+  To create a just and peaceful society with the power of love and integrity.
+</section>
 
-    <!-- Mission Section -->
-    <section class="section mission-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Our Mission</h2>
-                <p class="section-description">Dedicated to developing ethical servant leaders who embody integrity, love, and servanthood in promoting democracy, good governance, and creating a just, stable, and prosperous Congo.</p>
-            </div>
-            
-            <div class="mission-cards">
-                <div class="card mission-card">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 class="card-title">Ethical Leadership Development</h3>
-                    <p class="card-text">Comprehensive training programs focusing on servant leadership principles and practices, designed to create transformative leaders for Congo's future.</p>
-                    <a href="programs.html" class="btn btn-outline">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="card mission-card">
-                    <div class="card-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3 class="card-title">Community Transformation</h3>
-                    <p class="card-text">Empowering local communities through education, leadership training, and sustainable development initiatives that create lasting positive change.</p>
-                    <a href="programs.html" class="btn btn-outline">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="card mission-card">
-                    <div class="card-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3 class="card-title">International Collaboration</h3>
-                    <p class="card-text">Working with international partners and experts to bring world-class leadership training and development programs to the DRC.</p>
-                    <a href="team.html" class="btn btn-outline">Meet Our Partners <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="poster-section" style="text-align:center; margin:20px 0;">
+  <img src="img/CORRECT01.jpg" alt="Leadership Training Poster" style="max-width:100%; height:auto; border-radius:8px;">
+</section>
 
-    <!-- Stats Section -->
-    <section class="section stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Leaders Trained</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Expert Instructors</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">25+</div>
-                    <div class="stat-label">International Partners</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Training Programs</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="poster-section" style="text-align:center; margin:20px 0;">
+  <img src="img/CORRECT02.jpg" alt="Leadership Training Poster" style="max-width:100%; height:auto; border-radius:8px;">
+</section>
 
-    <!-- Programs Section -->
-    <section class="section programs-section" style="background: linear-gradient(135deg, #3d6db5 0%, #2558a8 100%); padding: 5rem 0;">
-        <div class="container">
-            <div class="section-header text-center">
-                <div style="margin-bottom: 2rem;">
-                    <img src="images/logo.png" alt="Ethical Servant Leadership Center Logo" style="height: 120px; width: auto; margin-bottom: 1rem;">
-                </div>
-                <h2 class="section-title" style="color: var(--white);">Lecturers</h2>
-                <p class="section-description" style="color: rgba(255, 255, 255, 0.95);">Comprehensive leadership development programs designed to address Congo's unique challenges and opportunities.</p>
-            </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; margin-top: 3rem;">
-                <!-- Dr. Michael Elliott -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; border: 5px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                        <img src="images/dr.mikeelliott.jpg" alt="Dr. Michael Elliott" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                    </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Servant and Transformational Leadership Models</h4>
-                    <h3 style="color: var(--orange); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Dr. Michael Elliott</h3>
-                </div>
+<div class="container" id="courses">
+  <h2>Our Training Programs</h2>
+  <div class="courses" id="courseList">
+    <!-- Courses will be loaded dynamically -->
+  </div>
+</div>
 
-                <!-- Dr. Valeria Elliott -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; border: 5px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                        <img src="images/valeria_elliot.jpeg" alt="Dr. Valeria Elliott" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                    </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Women's Leadership</h4>
-                    <h3 style="color: var(--orange); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Dr. Valeria Elliott</h3>
-                </div>
+<section class="poster-section" style="text-align:center; margin:20px 0;">
+  <img src="img/CORRECT03.jpg" alt="Leadership Training Poster" style="max-width:100%; height:auto; border-radius:8px;">
+</section>
 
-                <!-- Dr. Robert Osburn -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; border: 5px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                        <img src="images/robert _osburn.jpeg" alt="Dr. Robert Osburn" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                    </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Bridling The Culture of Corruption</h4>
-                    <h3 style="color: var(--orange); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Dr. Robert Osburn</h3>
-                </div>
 
-                <!-- Dr. Steve Branson -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; border: 5px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                        <img src="images/steven_branson.jpeg" alt="Dr. Steve Branson" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                    </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Understanding True Leadership: Foundation of Ethical Leadership and Its Role in Government</h4>
-                    <h3 style="color: var(--orange); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Dr. Steve Branson</h3>
-                </div>
 
-                <!-- M. Joël Kapapa -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; border: 5px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                        <img src="images/joel.jpeg" alt="M. Joël Kapapa" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                    </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Ethical Servant Leadership: Principles and Practices of the Power of Love and Integrity</h4>
-                    <h3 style="color: var(--orange); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">M. Joël Kapapa</h3>
-                </div>
+<section class="container" id="contact">
+  
+  <p></p>
+  <p></p>
+</section>
 
-                <!-- M. Daniel J. Forte -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; border: 5px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                        <img src="images/daniel j. forte.jpg" alt="M. Daniel J. Forte" style="width: 100%; height: 100%; object-fit: cover; object-position: 0 -30px;">
-                    </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Intimacy with Jesus Christ as the Foundation of True Leadership</h4>
-                    <h3 style="color: var(--orange); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">M. Daniel J. Forte</h3>
-                </div>
+<!-- Modal -->
+<div class="modal" id="courseModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDescription"></p>
+  </div>
+</div>
 
-                <!-- Mrs. Susan Forte -->
-                <div style="text-align: center;">
-                    <div style="width: 200px; height: 200px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; border: 5px solid var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                        <img src="images/susan.jpeg" alt="Mrs. Susan Forte" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                    </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Leadership Development and Servant Leadership</h4>
-                    <h3 style="color: var(--orange); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Mrs. Susan Forte</h3>
-                </div>
-            </div>
+<script>
+  const courses = [
+    {
+      title: "Ethical Servant Leadership principles and practices",
+      description: "Lecturer: Mr Joel Kapapa"
+    },
+    {
+      title: "Bridling the culture of corruption",
+      description: "Lecturer: Dr Bob Osburn PHD"
+    },
+    {
+      title: "Servant and transformational leadership models",
+      description: "Dr. Mike Elliot PHD"
+    },
+    {
+      title: "Women's Leadership",
+      description: "Lecturer: Dr. Valeria"
+    }
+    ,
+    {
+      title: "understanding true Leadership",
+      description: "Lecturer; Dr. Steve Branson"
+    }
+    ,
+    {
+      title: "Intimacy with Christ as a foundation of true leadership",
+      description: "Speaker: Mr. Daniel Forte"
+    }
+  ];
 
-            <div class="text-center section-cta" style="margin-top: 4rem;">
-                <a href="programs.html" class="btn btn-secondary" style="background: var(--white); color: var(--primary-blue); border: 2px solid var(--white);">View All Programs <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
+  const courseList = document.getElementById('courseList');
+  const modal = document.getElementById('courseModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDescription = document.getElementById('modalDescription');
+  const closeModal = document.getElementById('closeModal');
 
-    <!-- Why Choose Us Section -->
-    <section class="section why-choose-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Why Choose Ethical Servant DRC?</h2>
-                <p class="section-description">We are committed to developing leaders who will transform the Democratic Republic of Congo through ethical practices and servant leadership.</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-number">01</div>
-                    <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h3 class="feature-title">Expert Faculty</h3>
-                    <p class="feature-description">Learn from internationally recognized experts and local leaders with proven track records in ethical leadership and community development.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-number">02</div>
-                    <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3 class="feature-title">Practical Approach</h3>
-                    <p class="feature-description">Our programs combine theoretical knowledge with hands-on experience, ensuring leaders are prepared to tackle real-world challenges effectively.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-number">03</div>
-                    <div class="feature-icon"><i class="fas fa-globe-africa"></i></div>
-                    <h3 class="feature-title">Cultural Relevance</h3>
-                    <p class="feature-description">All programs are designed with deep understanding of Congolese culture and context, ensuring maximum relevance and impact in local communities.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-number">04</div>
-                    <div class="feature-icon"><i class="fas fa-seedling"></i></div>
-                    <h3 class="feature-title">Lasting Impact</h3>
-                    <p class="feature-description">We focus on creating sustainable change through ongoing support, mentorship, and a strong alumni network of ethical leaders.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  // Load courses dynamically
+  courses.forEach((course, index) => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+    card.innerHTML = `
+      <h3>${course.title}</h3>
+      <p>${course.description.substring(0, 80)}...</p>
+      <button class="btn" onclick="openModal(${index})">Learn More</button>
+    `;
+    courseList.appendChild(card);
+  });
 
-    <!-- Key Members Section -->
-    <section class="section key-members-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Our Key Members</h2>
-                <p class="section-description">Meet the leaders driving our mission forward</p>
-            </div>
-            
-            <div class="members-grid">
-                <div class="card member-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/joel.jpeg" alt="Mr. Joel Kapapa" class="instructor-image">
-                        </div>
-                        <h3 class="member-name">Mr. Joel Kapapa</h3>
-                        <p class="member-role">Co Founder and Director</p>
-                        <p class="card-text">Joel Kapapa, is a Fulbright Program alumnus with extensive experience in education and ethical servant leadership development. Joel holds two Master's degrees: one in philosophy from the Catholic University of Congo, where he served as vice president of the student body; and his second in political philosophy from the State University of New York at Albany, USA, where he specialized in Dr. Martin Luther King Jr. ethical leadership and the common good.</p>
-                        <a href="team.html#joel-kapapa" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+  // Open modal
+  function openModal(index) {
+    modalTitle.textContent = courses[index].title;
+    modalDescription.textContent = courses[index].description;
+    modal.style.display = 'flex';
+  }
 
-                <div class="card member-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/richardsasa.jpg" alt="Richard Sasa" class="instructor-image">
-                        </div>
-                        <h3 class="member-name">Richard Sasa</h3>
-                        <p class="member-role">Vice Director</p>
-                        <p class="card-text">Richard Sasa is an experienced human resource professional with diversified experience across various functional areas in administration (public and private) within multiple industries (manufacturing, food processing and nonprofit). He has a master's degree in human resources management from Utah State University (Utah, USA) and a bachelor's degree in philosophy from the Catholic University of Congo (UCC, Kinshasa/DRC).</p>
-                        <a href="team.html#richard-sasa" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+  // Close modal
+  closeModal.onclick = () => modal.style.display = 'none';
+  window.onclick = (e) => { if(e.target == modal) modal.style.display = 'none'; }
+</script>
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
 
-                <div class="card member-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/alicemusele.jpg" alt="Alice Musele" class="instructor-image">
-                        </div>
-                        <h3 class="member-name">Miss Alice Musele</h3>
-                        <p class="member-role">Logistics Manager</p>
-                        <p class="card-text">Alice holds a bachelor's degree in psychology and biology from the University of Alberta, Canada and has extensive experience in leadership and administration.</p>
-                        <a href="team.html#alice-musele" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center" style="margin-top: 2rem;">
-                <a href="team.html" class="btn btn-primary">See More Members <i class="fas fa-users"></i></a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Partners Section -->
-    <section class="section partners-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Our Partners</h2>
-                <p class="section-description">International experts supporting our mission</p>
-            </div>
-
-            <div class="partners-grid">
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/dr.mikeelliott.jpg" alt="Dr. Michael Elliott" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Dr. Michael Elliott</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">Professor and Director of international students, State University of New York, Albany (USA)...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/travis.jpeg" alt="Mr. Travis Weber" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Mr. Travis Weber</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">Travis S. Weber, J.D., LL.M., is Vice President for Policy and Government Affairs at Family Research Council, where he oversees research, policy development, and engagement with government officials in championing FRC's core mission priorities of faith, family, and freedom...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/Charles_kriss.jpeg" alt="Mr. Charles Kriss" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Mr. Charles Kriss</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">International partner supporting our mission...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/pastor_paul.jpeg" alt="Pastor Paul Schlett" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Pastor Paul Schlett</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">International partner supporting our mission...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/steven_branson.jpeg" alt="Dr. Steven Branson" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Dr. Steven Branson</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">International partner supporting our mission...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/susan.jpeg" alt="Mrs. Susan Forte" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Mrs. Susan Forte</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">International partner supporting our mission...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/dr_Jon _mandle.jpeg" alt="Dr. Jon Mandle" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Dr. Jon Mandle</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">International partner supporting our mission...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/daniel j. forte.jpg" alt="M. Daniel J. Forte" class="instructor-image" style="object-position: 0 -30px;">
-                        </div>
-                        <h3 class="partner-name">M. Daniel J. Forte</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">International partner supporting our mission...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/valeria_elliot.jpeg" alt="Dr. Valeria Elliott" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Dr. Valeria Elliott</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">International partner supporting our mission...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/robert _osburn.jpeg" alt="Dr. Robert Osburn" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Dr. Robert Osburn</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">Robert Osburn was the founder (2009) and Executive Director of the Wilberforce International Institute...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/garry.png" alt="Mr. Garry Finkell" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Mr. Garry Finkell</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">I received a bachelor's degree from Fordham University in New York City. My major was philosophy with a minor in mathematics. I received a master of science degree from Rensselaer Polytechnic Institute in Troy, New York...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card partner-card">
-                    <div class="card-body">
-                        <div class="instructor-profile">
-                            <img src="images/dr. breen.jpg" alt="Dr. Riobart Breen" class="instructor-image">
-                        </div>
-                        <h3 class="partner-name">Dr. Riobart E (Rob) Breen PHD</h3>
-                        <p class="partner-role">Partner</p>
-                        <p class="card-text">Dr. Ríobart É. Breen is the Director of the Institute for Transformational and Ecosystem-Based Climate Adaptation (ITECA), which is dedicated to transformational adaptation to climate change...</p>
-                        <a href="team.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center" style="margin-top: 2rem;">
-                <a href="team.html" class="btn btn-primary">See All Partners <i class="fas fa-handshake"></i></a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Get Involved Section -->
-    <section class="section get-involved-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">Get Involved</h2>
-                <p class="section-description">Join us in transforming the Democratic Republic of Congo through ethical servant leadership.</p>
-            </div>
-            
-            <div class="involved-grid">
-                <div class="card involved-card text-center">
-                    <div class="card-icon-large">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Enroll in Programs</h3>
-                        <p class="card-text">Join our comprehensive leadership training programs and become part of Congo's transformation.</p>
-                        <a href="programs.html" class="btn btn-primary">View Programs <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="card involved-card text-center">
-                    <div class="card-icon-large">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Partner With Us</h3>
-                        <p class="card-text">Collaborate with our organization to expand our impact and reach more communities across Congo.</p>
-                        <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="card involved-card text-center">
-                    <div class="card-icon-large">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Support Our Mission</h3>
-                        <p class="card-text">Help us continue our vital work by supporting our programs and initiatives through donations.</p>
-                        <a href="contact.html" class="btn btn-primary">Support Us <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="Ethical Servant DRC Logo" style="height: 80px; width: auto; margin-bottom: 1rem;">
-                    </div>
-                    <h3 class="footer-title">Ethical Servant DRC</h3>
-                    <p class="footer-description">Empowering leaders and transforming communities through ethical servant leadership training and development programs in the Democratic Republic of Congo.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="donation.html">Donate</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Contact Info</h4>
-                    <address class="footer-contact">
-                        <p><i class="fas fa-map-marker-alt"></i> American Space UPC</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Kinshasa, DRC</p>
-                        <p><i class="fas fa-phone"></i> Phone: +243 823160 272</p>
-                        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:admin@ethicalservantrdc.org">admin@ethicalservantrdc.org</a></p>
-                    </address>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ethical Servant Leadership Center DRC. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile navigation toggle
-        const navToggle = document.getElementById('navToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        navToggle.addEventListener('click', () => {
-            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-            navToggle.setAttribute('aria-expanded', !isExpanded);
-            navMenu.classList.toggle('show');
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (event) => {
-            const isClickInsideNav = document.querySelector('.header-content').contains(event.target);
-            if (!isClickInsideNav && navMenu.classList.contains('show')) {
-                navMenu.classList.remove('show');
-                navToggle.setAttribute('aria-expanded', 'false');
-            }
-        });
-        
-        // Add active class to current navigation item
-        const currentLocation = location.pathname.split('/').pop() || 'index.html';
-        const navItems = document.querySelectorAll('.nav-link');
-        navItems.forEach(item => {
-            if (item.getAttribute('href') === currentLocation) {
-                item.classList.add('active');
-            }
-        });
-        
-        // Hero slider functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const slides = document.querySelectorAll('.slide');
-            const dots = document.querySelectorAll('.dot');
-            const prevBtn = document.querySelector('.prev-btn');
-            const nextBtn = document.querySelector('.next-btn');
-            let currentSlide = 0;
-            
-            // Show slide function
-            function showSlide(index) {
-                slides.forEach(slide => slide.classList.remove('active'));
-                dots.forEach(dot => dot.classList.remove('active'));
-                
-                slides[index].classList.add('active');
-                dots[index].classList.add('active');
-                currentSlide = index;
-            }
-            
-            // Next slide
-            function nextSlide() {
-                let newIndex = currentSlide + 1;
-                if (newIndex >= slides.length) newIndex = 0;
-                showSlide(newIndex);
-            }
-            
-            // Previous slide
-            function prevSlide() {
-                let newIndex = currentSlide - 1;
-                if (newIndex < 0) newIndex = slides.length - 1;
-                showSlide(newIndex);
-            }
-            
-            // Auto slide change
-            setInterval(nextSlide, 5000);
-            
-            // Button event listeners
-            prevBtn.addEventListener('click', prevSlide);
-            nextBtn.addEventListener('click', nextSlide);
-            
-            // Dot navigation
-            dots.forEach(dot => {
-                dot.addEventListener('click', () => {
-                    const slideIndex = parseInt(dot.getAttribute('data-slide'));
-                    showSlide(slideIndex);
-                });
-            });
-        });
-        
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.site-header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-        
-        // Add animation when elements come into view
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.mission-card, .stat-item, .program-card, .feature-item, .member-card, .partner-card, .involved-card');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.3;
-                
-                if (elementPosition < screenPosition) {
-                    element.classList.add('fade-in');
-                }
-            });
-        }
-        
-        window.addEventListener('scroll', animateOnScroll);
-        // Trigger once on page load in case elements are already in view
-        document.addEventListener('DOMContentLoaded', animateOnScroll);
-
-        // Language Switcher
-        const langButtons = document.querySelectorAll('.lang-btn');
-
-        langButtons.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const lang = this.getAttribute('data-lang');
-                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
-                // Store language preference
-                localStorage.setItem('preferredLanguage', lang);
-
-                // Redirect to appropriate language version
-                if (lang === 'fr') {
-                    // Redirect to French version
-                    if (currentPage === 'index.html' || currentPage === '') {
-                        window.location.href = 'index-fr.html';
-                    } else if (currentPage.includes('-fr.html')) {
-                        // Already on French page, do nothing
-                    } else {
-                        // For other pages, add -fr before .html
-                        const frPage = currentPage.replace('.html', '-fr.html');
-                        window.location.href = frPage;
-                    }
-                } else {
-                    // Redirect to English version
-                    if (currentPage.includes('-fr.html')) {
-                        const enPage = currentPage.replace('-fr.html', '.html');
-                        window.location.href = enPage;
-                    }
-                }
-            });
-        });
-    </script>
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 </body>
 </html>

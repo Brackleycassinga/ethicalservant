@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-  </head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
   <body>
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -19,8 +20,8 @@
     <!-- Header with logo and navigation -->
     <header class="site-header">
       <div class="container">
-        <div style="background-color: #ffebee; padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 4px;">
-          <p style="color: #d32f2f; font-weight: 600; margin: 0; font-size: 0.9rem;">⚠️ Our website is currently under construction - Work in Progress!</p>
+        <div style="background-color: rgba(0, 113, 227, 0.08); padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 980px;">
+          <p style="color: #0071e3; font-weight: 400; margin: 0; font-size: 0.75rem;">Website under development</p>
         </div>
         <div class="header-content">
           <div class="logo">
@@ -60,7 +61,7 @@
     </header>
 
     <!-- Hero Slider Section -->
-    <section class="hero" id="main-content">
+    <section class="hero" id="main-content" style="min-height: 70vh;">
       <div class="hero-slider">
         <div class="slide active">
           <div class="slide-content">
@@ -82,8 +83,11 @@
         </div>
       </div>
       <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Ethical Servant Leadership Center</h1>
+        <div class="hero-content-wrapper">
+          <div class="hero-content">
+            <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">About Us</p>
+            <h1 class="hero-title">Ethical Servant Leadership Center</h1>
+          </div>
         </div>
       </div>
     </section>
@@ -92,91 +96,90 @@
     <main>
 
       <!-- Our Story Section -->
-      <section class="section mission-section">
+      <section class="section" style="background: #ffffff; padding: 6rem 0;">
         <div class="container">
           <div class="section-header text-center">
-            <h2 class="section-title">Our Story</h2>
+            <p style="color: #86868b; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Our Journey</p>
+            <h2 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Our Story</h2>
             <p class="section-description">
               Born from a vision of transformed leadership for a transformed Congo
             </p>
           </div>
 
-          <div class="mission-cards">
-            <div class="card mission-card">
-              <div class="card-body">
-                <p>
-                  The Ethical Servant Leadership Center emerged from a profound recognition that lasting
-                  change in the Democratic Republic of Congo requires leaders who embody integrity,
-                  compassion, and unwavering commitment to service.
-                </p>
+          <div style="max-width: 800px; margin: 3rem auto 0; text-align: center;">
+            <p style="color: #86868b; font-size: 1.125rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              The Ethical Servant Leadership Center emerged from a profound recognition that lasting
+              change in the Democratic Republic of Congo requires leaders who embody integrity,
+              compassion, and unwavering commitment to service.
+            </p>
 
-                <p>
-                  Founded by visionaries who witnessed both the challenges and immense potential of
-                  Congolese communities, our center represents a movement toward governance and
-                  leadership rooted in ethical principles and divine purpose. We believe that when
-                  leaders are transformed, entire communities follow.
-                </p>
+            <p style="color: #86868b; font-size: 1.125rem; line-height: 1.6;">
+              Founded by visionaries who witnessed both the challenges and immense potential of
+              Congolese communities, our center represents a movement toward governance and
+              leadership rooted in ethical principles and divine purpose. We believe that when
+              leaders are transformed, entire communities follow.
+            </p>
 
-                <p class="card-text">
-                  Our journey began with a simple yet revolutionary idea: that leadership development
-                  must go beyond skills training to encompass character transformation, moral courage,
-                  and a deep commitment to serving others. Today, we stand as a beacon of hope,
-                  training leaders who are restoring dignity, justice, and prosperity to the DRC.
-                </p>
-              </div>
+            <p style="color: #86868b; font-size: 1.125rem; line-height: 1.6;">
+              Our journey began with a simple yet revolutionary idea: that leadership development
+              must go beyond skills training to encompass character transformation, moral courage,
+              and a deep commitment to serving others. Today, we stand as a beacon of hope,
+              training leaders who are restoring dignity, justice, and prosperity to the DRC.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="section" style="background: #000000; padding: 6rem 0;">
+        <div class="container">
+          <div class="section-header text-center">
+            <p style="color: #86868b; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Our Impact</p>
+            <h2 class="section-title" style="color: #ffffff; font-size: clamp(2rem, 4vw, 3rem);">Making a Difference</h2>
+          </div>
+          <div class="stats-grid" style="margin-top: 3rem;">
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Leaders Trained</div>
             </div>
-
-            <div class="card mission-card">
-              <div class="card-body">
-                <h3 class="card-title">Our Impact at a Glance</h3>
-                <p class="card-text">Over the years, we have made significant strides in transforming leadership across the Democratic Republic of Congo through our comprehensive programs and initiatives.</p>
-                <div style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%); padding: 2rem; border-radius: 8px; margin-top: 1.5rem;">
-                  <div class="stats-grid" style="max-width: 100%;">
-                    <div class="stat-item">
-                      <div class="stat-number">500+</div>
-                      <div class="stat-label">Leaders Trained</div>
-                    </div>
-                    <div class="stat-item">
-                      <div class="stat-number">25+</div>
-                      <div class="stat-label">Partner Organizations</div>
-                    </div>
-                    <div class="stat-item">
-                      <div class="stat-number">15+</div>
-                      <div class="stat-label">Expert Facilitators</div>
-                    </div>
-                    <div class="stat-item">
-                      <div class="stat-number">10+</div>
-                      <div class="stat-label">Communities Transformed</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="stat-item">
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Partner Organizations</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Expert Facilitators</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Communities Transformed</div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Vision and Mission Section -->
-      <section class="section mission-section">
+      <section class="section" style="background: #f5f5f7; padding: 6rem 0;">
         <div class="container">
           <div class="section-header text-center">
-            <h2 class="section-title">Our Vision & Mission</h2>
+            <p style="color: #86868b; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Purpose</p>
+            <h2 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Our Vision & Mission</h2>
             <p class="section-description">
               The foundation of our work and the future we're building together
             </p>
           </div>
 
-          <div class="mission-cards">
-            <div class="card mission-card">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+            <div class="card" style="background: #ffffff; border-radius: 18px;">
               <div class="card-body">
-                <h3 class="card-title">Our Vision</h3>
-                <p class="card-text">
+                <h3 class="card-title" style="font-size: 1.5rem;">Our Vision</h3>
+                <p class="card-text" style="font-size: 1.125rem;">
                   We envision a society where governance is driven by ethical leadership,
                   inclusive participation, and the transformative power of love—a Congo free
                   from corruption, oppression, and inequality, where every citizen experiences
                   dignity, justice, and opportunity for prosperity.
                 </p>
-                <p class="card-text">
+                <p class="card-text" style="font-size: 1rem;">
                   Our vision extends beyond national borders, as we aspire to be a model
                   for ethical leadership development throughout Central Africa, demonstrating
                   that principled leadership can overcome the most challenging circumstances
@@ -185,15 +188,15 @@
               </div>
             </div>
 
-            <div class="card mission-card">
+            <div class="card" style="background: #ffffff; border-radius: 18px;">
               <div class="card-body">
-                <h3 class="card-title">Our Mission</h3>
-                <p class="card-text">
+                <h3 class="card-title" style="font-size: 1.5rem;">Our Mission</h3>
+                <p class="card-text" style="font-size: 1.125rem;">
                   We empower ethical servant leaders to transform communities and governance
                   systems by championing integrity, justice, and civic accountability through
                   comprehensive leadership training, mentoring, and purposeful action.
                 </p>
-                <p class="card-text">
+                <p class="card-text" style="font-size: 1rem;">
                   Through innovative programs that blend character development with practical
                   skills, we equip leaders to serve with humility, lead with courage, and
                   create sustainable change that honors both divine purpose and human dignity.
@@ -205,73 +208,67 @@
       </section>
 
       <!-- Core Values Section -->
-      <section class="section mission-section">
+      <section class="section" style="background: #ffffff; padding: 6rem 0;">
         <div class="container">
           <div class="section-header text-center">
-            <h2 class="section-title">Our Core Values</h2>
+            <p style="color: #86868b; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Values</p>
+            <h2 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Our Core Values</h2>
             <p class="section-description">
               The foundational principles that guide every aspect of our work and define who we are
             </p>
           </div>
 
-          <div class="mission-cards">
-            <div class="card mission-card">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+            <div class="card" style="background: #f5f5f7; border-radius: 18px; text-align: center;">
+              <div class="card-body">
+                <div class="card-icon" style="background: #0071e3; color: #ffffff;">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="card-title" style="font-size: 1.25rem;">Integrity</h3>
+                <p class="card-text">
+                  Leading with honesty and moral courage, we believe that authentic leadership
+                  begins with unwavering commitment to truth and ethical conduct.
+                </p>
               </div>
-              <h3 class="card-title">Integrity</h3>
-              <p class="card-text">
-                Leading with honesty and moral courage, we believe that authentic leadership
-                begins with unwavering commitment to truth and ethical conduct in every decision,
-                relationship, and action.
-              </p>
             </div>
 
-            <div class="card mission-card">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                </svg>
+            <div class="card" style="background: #f5f5f7; border-radius: 18px; text-align: center;">
+              <div class="card-body">
+                <div class="card-icon" style="background: #0071e3; color: #ffffff;">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="card-title" style="font-size: 1.25rem;">Love</h3>
+                <p class="card-text">
+                  Rooting leadership in compassion and care, we understand that genuine
+                  transformation happens when leaders serve from the heart.
+                </p>
               </div>
-              <h3 class="card-title">Love</h3>
-              <p class="card-text">
-                Rooting leadership in compassion and care, we understand that genuine
-                transformation happens when leaders serve from the heart, putting the wellbeing
-                of others before personal gain.
-              </p>
             </div>
 
-            <div class="card mission-card">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="3"></circle>
-                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                </svg>
+            <div class="card" style="background: #f5f5f7; border-radius: 18px; text-align: center;">
+              <div class="card-body">
+                <div class="card-icon" style="background: #0071e3; color: #ffffff;">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="card-title" style="font-size: 1.25rem;">Transparency</h3>
+                <p class="card-text">
+                  Clear and open communication builds trust and accountability as the foundation
+                  for sustainable democratic institutions.
+                </p>
               </div>
-              <h3 class="card-title">Transparency</h3>
-              <p class="card-text">
-                Clear and open communication builds trust and accountability. We champion
-                transparency in all governance and organizational practices as the foundation
-                for sustainable democratic institutions.
-              </p>
             </div>
 
-            <div class="card mission-card">
-              <div class="card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                  <line x1="3" y1="6" x2="21" y2="6"></line>
-                  <path d="M16 10a4 4 0 0 1-8 0"></path>
-                </svg>
+            <div class="card" style="background: #f5f5f7; border-radius: 18px; text-align: center;">
+              <div class="card-body">
+                <div class="card-icon" style="background: #0071e3; color: #ffffff;">
+                  <i class="fas fa-mountain"></i>
+                </div>
+                <h3 class="card-title" style="font-size: 1.25rem;">Resilience</h3>
+                <p class="card-text">
+                  Remaining faithful to our values amid adversity, we cultivate leaders who
+                  persevere through challenges while maintaining their moral compass.
+                </p>
               </div>
-              <h3 class="card-title">Resilience</h3>
-              <p class="card-text">
-                Remaining faithful to our values amid adversity, we cultivate leaders who
-                persevere through challenges while maintaining their moral compass and
-                commitment to positive change.
-              </p>
             </div>
 
             <div class="card mission-card">
@@ -661,6 +658,7 @@
         const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
         navToggle.setAttribute("aria-expanded", !isExpanded);
         navMenu.classList.toggle("show");
+        document.body.classList.toggle("menu-open");
       });
 
       // Close mobile menu when clicking outside
@@ -671,7 +669,17 @@
         if (!isClickInsideNav && navMenu.classList.contains("show")) {
           navMenu.classList.remove("show");
           navToggle.setAttribute("aria-expanded", "false");
+          document.body.classList.remove("menu-open");
         }
+      });
+
+      // Close menu when clicking a nav link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+          navToggle.setAttribute("aria-expanded", "false");
+          document.body.classList.remove("menu-open");
+        });
       });
 
       // Add active class to current navigation item

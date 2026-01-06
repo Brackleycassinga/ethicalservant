@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Apple SF Pro fallback */
+        @supports (font: -apple-system-body) {
+            body { font: -apple-system-body; }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content for accessibility -->
@@ -17,8 +23,8 @@
     <!-- Header with logo and navigation -->
     <header class="site-header">
         <div class="container">
-            <div style="background-color: #fef3c7; padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 6px;">
-                <p style="color: #92400e; font-weight: 500; margin: 0; font-size: 0.85rem;">Website under construction - Work in Progress</p>
+            <div style="background-color: rgba(0, 113, 227, 0.08); padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 980px;">
+                <p style="color: #0071e3; font-weight: 400; margin: 0; font-size: 0.75rem;">Website under development</p>
             </div>
             <div class="header-content">
                 <div class="logo">
@@ -57,17 +63,27 @@
         <div class="hero-slider">
             <div class="slide active">
                 <div class="slide-content">
-                    <img src="images/Gemini_Generated_Image_1ucld61ucld61ucl.png" alt="Leadership Training">
+                    <img src="images/gallery/training1.jpeg" alt="Leadership Training Session 1">
                 </div>
             </div>
             <div class="slide">
                 <div class="slide-content">
-                    <img src="images/Gemini_Generated_Image_9eiade9eiade9eia.png" alt="Community Development">
+                    <img src="images/gallery/training2.jpeg" alt="Leadership Training Session 2">
                 </div>
             </div>
             <div class="slide">
                 <div class="slide-content">
-                    <img src="images/joel_present.jpeg" alt="Joel Teaching">
+                    <img src="images/gallery/training3.jpeg" alt="Leadership Training Session 3">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="images/gallery/training4.jpeg" alt="Leadership Training Session 4">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="images/gallery/training5.jpeg" alt="Leadership Training Session 5">
                 </div>
             </div>
             <div class="slider-nav">
@@ -78,6 +94,8 @@
                 <span class="dot active" data-slide="0"></span>
                 <span class="dot" data-slide="1"></span>
                 <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
             </div>
         </div>
         <div class="container">
@@ -94,34 +112,64 @@
         </div>
     </section>
 
-    <!-- Bible Verse Section -->
-    <section class="section" style="background: var(--primary-blue); padding: 3.5rem 0;">
+    <!-- Joel Kapapa Featured Article Section -->
+    <section class="section" style="background: #000000; padding: 6rem 0;">
         <div class="container">
-            <div style="text-align: center; color: var(--white); max-width: 800px; margin: 0 auto;">
-                <h2 style="color: var(--white); font-size: 1.5rem; margin-bottom: 2rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Our Foundation</h2>
-                <blockquote style="border-left: 3px solid var(--orange); padding-left: 1.5rem; margin: 0 0 1.5rem 0; text-align: left;">
-                    <p style="font-size: 1.15rem; line-height: 1.8; color: rgba(255, 255, 255, 0.9); margin-bottom: 0.5rem; font-style: italic;">
+            <div class="featured-article-grid">
+                <div style="position: relative; padding-bottom: 1rem;">
+                    <img src="https://www.albany.edu/sites/default/files/styles/crop_news_main_image/public/2025-04/Joel%20Kapapa%20photo%202.jpg?h=3d40f206&itok=OBikKftf" alt="Joel Kapapa - UAlbany Fulbright Alum" style="width: 100%; border-radius: 18px;">
+                    <div style="display: inline-flex; align-items: center; background: #0071e3; color: white; padding: 0.5rem 1rem; border-radius: 980px; font-weight: 400; font-size: 0.75rem; margin-top: 1rem;">
+                        <i class="fas fa-award" style="margin-right: 0.5rem;"></i>Fulbright Alumnus
+                    </div>
+                </div>
+                <div>
+                    <span style="display: inline-block; color: #0071e3; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem;">Featured Story</span>
+                    <h2 style="font-size: clamp(1.75rem, 4vw, 2.5rem); color: #ffffff; margin-bottom: 1rem; line-height: 1.1; letter-spacing: -0.03em;">UAlbany Fulbright Alum Developing Leadership Center in DRC</h2>
+                    <p style="color: rgba(255, 255, 255, 0.6); line-height: 1.5; margin-bottom: 1.5rem; font-size: 1.125rem;">
+                        Joel Kapapa, a 2024 graduate of UAlbany's Master of Arts in Philosophy program and Fulbright Scholar, is establishing the Ethical Servant Leadership Center in the Democratic Republic of Congo.
+                    </p>
+                    <div style="display: flex; flex-direction: row; gap: 1.5rem; align-items: center; margin-top: 0.5rem;">
+                        <a href="https://www.albany.edu/international-education/news/2025-ualbany-fulbright-alum-developing-leadership-center-his-home" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            Read Full Article <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="team.html#joel-kapapa" style="color: #2997ff; text-decoration: none; font-size: 1rem;">
+                            Learn more about Joel <i class="fas fa-chevron-right" style="font-size: 0.75rem; margin-left: 0.25rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bible Verse Section -->
+    <section class="section" style="background: #0071e3; padding: 6rem 0;">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.875rem; font-weight: 400; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Our Foundation</p>
+                <blockquote style="margin: 0 0 2rem 0; text-align: center;">
+                    <p style="font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; color: #ffffff; margin-bottom: 0.75rem; font-weight: 600; letter-spacing: -0.02em;">
                         "The son of man came to serve others, not to be served."
                     </p>
-                    <footer style="color: var(--orange); font-weight: 500; font-size: 0.95rem;">— Matthew 20:28</footer>
+                    <footer style="color: rgba(255, 255, 255, 0.7); font-weight: 400; font-size: 1rem;">Matthew 20:28</footer>
                 </blockquote>
-                <blockquote style="border-left: 3px solid var(--orange); padding-left: 1.5rem; margin: 0; text-align: left;">
-                    <p style="font-size: 1.15rem; line-height: 1.8; color: rgba(255, 255, 255, 0.9); margin-bottom: 0.5rem; font-style: italic;">
+                <blockquote style="margin: 0; text-align: center;">
+                    <p style="font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; color: #ffffff; margin-bottom: 0.75rem; font-weight: 600; letter-spacing: -0.02em;">
                         "The greatest among you must be your servant."
                     </p>
-                    <footer style="color: var(--orange); font-weight: 500; font-size: 0.95rem;">— Matthew 23:11</footer>
+                    <footer style="color: rgba(255, 255, 255, 0.7); font-weight: 400; font-size: 1rem;">Matthew 23:11</footer>
                 </blockquote>
             </div>
         </div>
     </section>
 
     <!-- About ESLC Section -->
-    <section class="section" style="background: var(--white); padding: 4rem 0;">
+    <section class="section" style="background: #ffffff; padding: 6rem 0;">
         <div class="container">
             <div class="section-header text-center">
-                <h2 class="section-title">About Us</h2>
-                <p class="section-description" style="max-width: 800px; margin: 1.5rem auto 0; font-size: 1rem; line-height: 1.8;">
-                    The 'ETHICAL SERVANT LEADERSHIP CENTER', abbreviated as "CLSE asbl' or 'ETHICAL SERVANT LEADERSHIP CENTER", 'ESLC asbl', in English, is a non-profit association created by Congolese citizens concerned with contributing effectively to the major challenges facing the society in which they live, particularly issues of ethical leadership and corruption.
+                <p style="color: #86868b; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">About Us</p>
+                <h2 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Ethical Servant Leadership Center</h2>
+                <p class="section-description" style="max-width: 720px; margin: 1rem auto 0; font-size: 1.125rem; line-height: 1.5;">
+                    A non-profit association created by Congolese citizens committed to addressing the major challenges of ethical leadership and governance in the Democratic Republic of Congo.
                 </p>
             </div>
         </div>
@@ -191,83 +239,83 @@
     </section>
 
     <!-- Programs Section -->
-    <section class="section programs-section" style="background: var(--primary-blue); padding: 5rem 0;">
+    <section class="section programs-section" style="background: #000000; padding: 6rem 0;">
         <div class="container">
             <div class="section-header text-center">
-                <div style="margin-bottom: 1.5rem;">
-                    <img src="images/logo.png" alt="Ethical Servant Leadership Center Logo" style="height: 80px; width: auto; margin-bottom: 0.75rem; opacity: 0.95;">
-                </div>
-                <h2 class="section-title" style="color: var(--white);">Lecturers</h2>
-                <p class="section-description" style="color: rgba(255, 255, 255, 0.85);">Comprehensive leadership development programs designed to address Congo's unique challenges and opportunities.</p>
+                <p style="color: #86868b; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Expert Faculty</p>
+                <h2 class="section-title" style="color: #ffffff; font-size: clamp(2rem, 4vw, 3rem);">Our Lecturers</h2>
+                <p class="section-description" style="color: rgba(255, 255, 255, 0.6);">World-class educators bringing transformative leadership training to the DRC.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2.5rem; margin-top: 2.5rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-top: 3rem;">
                 <!-- Dr. Michael Elliott -->
                 <div style="text-align: center;">
-                    <div style="width: 160px; height: 160px; margin: 0 auto 1.25rem; border-radius: 50%; overflow: hidden; border: 3px solid rgba(255,255,255,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <div style="width: 140px; height: 140px; margin: 0 auto 1rem; border-radius: 50%; overflow: hidden;">
                         <img src="images/dr.mikeelliott.jpg" alt="Dr. Michael Elliott" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                     </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 400;">Servant and Transformational Leadership Models</h4>
-                    <h3 style="color: var(--orange); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Dr. Michael Elliott</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 400;">Servant Leadership</h4>
+                    <h3 style="color: #ffffff; font-size: 1.125rem; font-weight: 600; margin-bottom: 0;">Dr. Michael Elliott</h3>
                 </div>
 
                 <!-- Dr. Valeria Elliott -->
                 <div style="text-align: center;">
-                    <div style="width: 160px; height: 160px; margin: 0 auto 1.25rem; border-radius: 50%; overflow: hidden; border: 3px solid rgba(255,255,255,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <div style="width: 140px; height: 140px; margin: 0 auto 1rem; border-radius: 50%; overflow: hidden;">
                         <img src="images/valeria_elliot.jpeg" alt="Dr. Valeria Elliott" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                     </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 400;">Women's Leadership</h4>
-                    <h3 style="color: var(--orange); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Dr. Valeria Elliott</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 400;">Women's Leadership</h4>
+                    <h3 style="color: #ffffff; font-size: 1.125rem; font-weight: 600; margin-bottom: 0;">Dr. Valeria Elliott</h3>
                 </div>
 
                 <!-- Dr. Robert Osburn -->
                 <div style="text-align: center;">
-                    <div style="width: 160px; height: 160px; margin: 0 auto 1.25rem; border-radius: 50%; overflow: hidden; border: 3px solid rgba(255,255,255,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <div style="width: 140px; height: 140px; margin: 0 auto 1rem; border-radius: 50%; overflow: hidden;">
                         <img src="images/robert _osburn.jpeg" alt="Dr. Robert Osburn" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                     </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 400;">Bridling The Culture of Corruption</h4>
-                    <h3 style="color: var(--orange); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Dr. Robert Osburn</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 400;">Anti-Corruption</h4>
+                    <h3 style="color: #ffffff; font-size: 1.125rem; font-weight: 600; margin-bottom: 0;">Dr. Robert Osburn</h3>
                 </div>
 
                 <!-- Dr. Steve Branson -->
                 <div style="text-align: center;">
-                    <div style="width: 160px; height: 160px; margin: 0 auto 1.25rem; border-radius: 50%; overflow: hidden; border: 3px solid rgba(255,255,255,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <div style="width: 140px; height: 140px; margin: 0 auto 1rem; border-radius: 50%; overflow: hidden;">
                         <img src="images/steven_branson.jpeg" alt="Dr. Steve Branson" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                     </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 400;">Understanding True Leadership: Foundation of Ethical Leadership and Its Role in Government</h4>
-                    <h3 style="color: var(--orange); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Dr. Steve Branson</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 400;">Ethical Leadership</h4>
+                    <h3 style="color: #ffffff; font-size: 1.125rem; font-weight: 600; margin-bottom: 0;">Dr. Steve Branson</h3>
                 </div>
 
                 <!-- M. Joël Kapapa -->
                 <div style="text-align: center;">
-                    <div style="width: 160px; height: 160px; margin: 0 auto 1.25rem; border-radius: 50%; overflow: hidden; border: 3px solid rgba(255,255,255,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <div style="width: 140px; height: 140px; margin: 0 auto 1rem; border-radius: 50%; overflow: hidden;">
                         <img src="images/joel.jpeg" alt="M. Joël Kapapa" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                     </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 400;">Ethical Servant Leadership: Principles and Practices of the Power of Love and Integrity</h4>
-                    <h3 style="color: var(--orange); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">M. Joël Kapapa</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 400;">Founder & Director</h4>
+                    <h3 style="color: #ffffff; font-size: 1.125rem; font-weight: 600; margin-bottom: 0;">M. Joël Kapapa</h3>
                 </div>
 
                 <!-- M. Daniel J. Forte -->
                 <div style="text-align: center;">
-                    <div style="width: 160px; height: 160px; margin: 0 auto 1.25rem; border-radius: 50%; overflow: hidden; border: 3px solid rgba(255,255,255,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <div style="width: 140px; height: 140px; margin: 0 auto 1rem; border-radius: 50%; overflow: hidden;">
                         <img src="images/daniel j. forte.jpg" alt="M. Daniel J. Forte" style="width: 100%; height: 100%; object-fit: cover; object-position: 0 -30px;">
                     </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 400;">Intimacy with Jesus Christ as the Foundation of True Leadership</h4>
-                    <h3 style="color: var(--orange); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">M. Daniel J. Forte</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 400;">Faith & Leadership</h4>
+                    <h3 style="color: #ffffff; font-size: 1.125rem; font-weight: 600; margin-bottom: 0;">M. Daniel J. Forte</h3>
                 </div>
 
                 <!-- Mrs. Susan Forte -->
                 <div style="text-align: center;">
-                    <div style="width: 160px; height: 160px; margin: 0 auto 1.25rem; border-radius: 50%; overflow: hidden; border: 3px solid rgba(255,255,255,0.3); box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <div style="width: 140px; height: 140px; margin: 0 auto 1rem; border-radius: 50%; overflow: hidden;">
                         <img src="images/susan.jpeg" alt="Mrs. Susan Forte" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                     </div>
-                    <h4 style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 400;">Leadership Development and Servant Leadership</h4>
-                    <h3 style="color: var(--orange); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Mrs. Susan Forte</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem; margin-bottom: 0.5rem; font-weight: 400;">Leadership Development</h4>
+                    <h3 style="color: #ffffff; font-size: 1.125rem; font-weight: 600; margin-bottom: 0;">Mrs. Susan Forte</h3>
                 </div>
             </div>
 
             <div class="text-center section-cta" style="margin-top: 3rem;">
-                <a href="programs.html" class="btn btn-secondary" style="background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.6);">View All Programs <i class="fas fa-arrow-right"></i></a>
+                <a href="programs.html" style="color: #2997ff; text-decoration: none; font-size: 1.125rem;">
+                    View all programs <i class="fas fa-chevron-right" style="font-size: 0.875rem; margin-left: 0.25rem;"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -624,6 +672,7 @@
             const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
             navToggle.setAttribute('aria-expanded', !isExpanded);
             navMenu.classList.toggle('show');
+            document.body.classList.toggle('menu-open');
         });
         
         // Close mobile menu when clicking outside
@@ -632,7 +681,17 @@
             if (!isClickInsideNav && navMenu.classList.contains('show')) {
                 navMenu.classList.remove('show');
                 navToggle.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
             }
+        });
+
+        // Close menu when clicking a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
+            });
         });
         
         // Add active class to current navigation item

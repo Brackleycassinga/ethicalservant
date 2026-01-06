@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -54,7 +54,8 @@
         }
       }
     </style>
-  </head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
   <body>
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -64,22 +65,22 @@
       <div class="container">
         <div
           style="
-            background-color: #ffebee;
+            background-color: rgba(0, 113, 227, 0.08);
             padding: 0.5rem;
             text-align: center;
             margin-bottom: 0.5rem;
-            border-radius: 4px;
+            border-radius: 980px;
           "
         >
           <p
             style="
-              color: #d32f2f;
-              font-weight: 600;
+              color: #0071e3;
+              font-weight: 400;
               margin: 0;
-              font-size: 0.9rem;
+              font-size: 0.75rem;
             "
           >
-            ⚠️ Our website is currently under construction - Work in Progress!
+            Website under development
           </p>
         </div>
         <div class="header-content">
@@ -123,14 +124,15 @@
     <section class="section team-section" id="main-content">
       <div class="container">
         <div class="section-header text-center">
-          <h1 class="section-title">Our Team</h1>
+          <p style="color: #86868b; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Leadership</p>
+          <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Our Team</h1>
           <p class="section-description">
             Meet the dedicated professionals driving our mission forward
           </p>
         </div>
 
-        <div class="section-header text-center">
-          <h2 class="section-title">Key Members</h2>
+        <div class="section-header text-center" style="margin-top: 4rem;">
+          <h2 class="section-title" style="font-size: clamp(1.75rem, 3vw, 2.5rem);">Key Members</h2>
         </div>
 
         <div class="team-grid three-col">
@@ -252,7 +254,7 @@
                 class="team-member-image"
               />
               <div class="team-member-info">
-                <h3 class="team-member-name">Mrs. Emmanuelle Kapita</h3>
+                <h3 class="team-member-name">Emmanuelle Kapita</h3>
                 <p class="team-member-role">
                   Monitoring and Evaluation Manager
                 </p>
@@ -648,11 +650,11 @@
             <div class="card-body team-member-card">
               <img
                 src="images/susan.jpeg"
-                alt="Mrs. Susan J. Forte"
+                alt="Susan J. Forte"
                 class="team-member-image"
               />
               <div class="team-member-info">
-                <h3 class="team-member-name">Mrs. Susan J. Forte</h3>
+                <h3 class="team-member-name">Susan J. Forte</h3>
                 <p class="team-member-role">Partner</p>
                 <p class="team-member-bio">
                   Susan has served in leadership roles in several not-for-profit
@@ -1037,6 +1039,7 @@
         const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
         navToggle.setAttribute("aria-expanded", !isExpanded);
         navMenu.classList.toggle("show");
+        document.body.classList.toggle("menu-open");
       });
 
       // Close mobile menu when clicking outside
@@ -1047,7 +1050,17 @@
         if (!isClickInsideNav && navMenu.classList.contains("show")) {
           navMenu.classList.remove("show");
           navToggle.setAttribute("aria-expanded", "false");
+          document.body.classList.remove("menu-open");
         }
+      });
+
+      // Close menu when clicking a nav link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+          navToggle.setAttribute("aria-expanded", "false");
+          document.body.classList.remove("menu-open");
+        });
       });
 
       // Add active class to current navigation item

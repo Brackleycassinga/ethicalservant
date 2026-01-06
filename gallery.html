@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Skip to main content for accessibility -->
@@ -16,8 +17,8 @@
     <!-- Header with logo and navigation -->
     <header class="site-header">
         <div class="container">
-            <div style="background-color: #ffebee; padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 4px;">
-                <p style="color: #d32f2f; font-weight: 600; margin: 0; font-size: 0.9rem;">⚠️ Our website is currently under construction - Work in Progress!</p>
+            <div style="background-color: rgba(0, 113, 227, 0.08); padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 980px;">
+                <p style="color: #0071e3; font-weight: 400; margin: 0; font-size: 0.75rem;">Website under development</p>
             </div>
             <div class="header-content">
                 <div class="logo">
@@ -293,6 +294,7 @@
             const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
             navToggle.setAttribute('aria-expanded', !isExpanded);
             navMenu.classList.toggle('show');
+            document.body.classList.toggle('menu-open');
         });
         
         // Close mobile menu when clicking outside

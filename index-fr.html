@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
     <!-- Header with logo and navigation -->
     <header class="site-header">
         <div class="container">
-            <div style="background-color: #ffebee; padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 4px;">
-                <p style="color: #d32f2f; font-weight: 600; margin: 0; font-size: 0.9rem;">⚠️ Notre site web est actuellement en construction - Travaux en cours!</p>
+            <div style="background-color: rgba(0, 113, 227, 0.08); padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; border-radius: 980px;">
+                <p style="color: #0071e3; font-weight: 400; margin: 0; font-size: 0.75rem;">Site web en développement</p>
             </div>
             <div class="header-content">
                 <div class="logo">
@@ -57,17 +57,27 @@
         <div class="hero-slider">
             <div class="slide active">
                 <div class="slide-content">
-                    <img src="images/Gemini_Generated_Image_1ucld61ucld61ucl.png" alt="Leadership Training">
+                    <img src="images/gallery/training1.jpeg" alt="Formation en Leadership 1">
                 </div>
             </div>
             <div class="slide">
                 <div class="slide-content">
-                    <img src="images/Gemini_Generated_Image_9eiade9eiade9eia.png" alt="Community Development">
+                    <img src="images/gallery/training2.jpeg" alt="Formation en Leadership 2">
                 </div>
             </div>
             <div class="slide">
                 <div class="slide-content">
-                    <img src="images/joel_present.jpeg" alt="Joel Teaching">
+                    <img src="images/gallery/training3.jpeg" alt="Formation en Leadership 3">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="images/gallery/training4.jpeg" alt="Formation en Leadership 4">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="images/gallery/training5.jpeg" alt="Formation en Leadership 5">
                 </div>
             </div>
             <div class="slider-nav">
@@ -78,16 +88,43 @@
                 <span class="dot active" data-slide="0"></span>
                 <span class="dot" data-slide="1"></span>
                 <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
             </div>
         </div>
         <div class="container">
             <div class="hero-content-wrapper">
                 <div class="hero-content">
                     <h1 class="hero-title">Créer une Société Juste et Pacifique</h1>
-                    <p class="hero-subtitle">Par la puissance de l'amour, de l'intégrité et du leadership serviteur éthique, nous transformons les communautés et construisons un avenir meilleur pour la République Démocratique du Congo.</p>
-                    <div class="hero-buttons">
-                        <a href="programs-fr.html" class="btn btn-primary">Nos Programmes <i class="fas fa-arrow-right"></i></a>
-                        <a href="about-fr.html" class="btn btn-secondary">En Savoir Plus <i class="fas fa-info-circle"></i></a>
+                    <p class="hero-subtitle">Par la puissance de l'amour, de l'intégrité et du leadership serviteur éthique, nous transformons les communautés et construisons un avenir meilleur pour la RDC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Joel Kapapa Featured Article Section -->
+    <section class="section" style="background: #000000; padding: 6rem 0;">
+        <div class="container">
+            <div class="featured-article-grid">
+                <div style="position: relative; padding-bottom: 1rem;">
+                    <img src="https://www.albany.edu/sites/default/files/styles/crop_news_main_image/public/2025-04/Joel%20Kapapa%20photo%202.jpg?h=3d40f206&itok=OBikKftf" alt="Joel Kapapa - UAlbany Fulbright Alum" style="width: 100%; border-radius: 18px;">
+                    <div style="display: inline-flex; align-items: center; background: #0071e3; color: white; padding: 0.5rem 1rem; border-radius: 980px; font-weight: 400; font-size: 0.75rem; margin-top: 1rem;">
+                        <i class="fas fa-award" style="margin-right: 0.5rem;"></i>Ancien Fulbright
+                    </div>
+                </div>
+                <div>
+                    <span style="display: inline-block; color: #0071e3; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem;">Article à la Une</span>
+                    <h2 style="font-size: clamp(1.75rem, 4vw, 2.5rem); color: #ffffff; margin-bottom: 1rem; line-height: 1.1; letter-spacing: -0.03em;">Ancien Fulbright de UAlbany développe un Centre de Leadership en RDC</h2>
+                    <p style="color: rgba(255, 255, 255, 0.6); line-height: 1.5; margin-bottom: 1.5rem; font-size: 1.125rem;">
+                        Joel Kapapa, diplômé 2024 du programme de Maîtrise en Philosophie de UAlbany et boursier Fulbright, établit le Centre de Leadership Serviteur Éthique en RDC.
+                    </p>
+                    <div style="display: flex; flex-direction: row; gap: 1.5rem; align-items: center; margin-top: 0.5rem;">
+                        <a href="https://www.albany.edu/international-education/news/2025-ualbany-fulbright-alum-developing-leadership-center-his-home" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            Lire l'Article <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="team-fr.html#joel-kapapa" style="color: #2997ff; text-decoration: none; font-size: 1rem;">
+                            En savoir plus sur Joel <i class="fas fa-chevron-right" style="font-size: 0.75rem; margin-left: 0.25rem;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -95,33 +132,34 @@
     </section>
 
     <!-- Bible Verse Section -->
-    <section class="section" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%); padding: 4rem 0;">
+    <section class="section" style="background: #0071e3; padding: 6rem 0;">
         <div class="container">
-            <div style="text-align: center; color: var(--white); max-width: 900px; margin: 0 auto;">
-                <h2 style="color: var(--white); font-size: 2rem; margin-bottom: 2rem; font-style: italic;">Notre Fondement</h2>
-                <blockquote style="border-left: 4px solid var(--orange); padding-left: 1.5rem; margin: 0 0 2rem 0; text-align: left;">
-                    <p style="font-size: 1.3rem; line-height: 1.8; color: rgba(255, 255, 255, 0.95); margin-bottom: 0.5rem; font-style: italic;">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.875rem; font-weight: 400; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Notre Fondement</p>
+                <blockquote style="margin: 0 0 2rem 0; text-align: center;">
+                    <p style="font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; color: #ffffff; margin-bottom: 0.75rem; font-weight: 600; letter-spacing: -0.02em;">
                         "Le fils de l'homme est venu pour servir les autres, non pour être servi."
                     </p>
-                    <footer style="color: var(--orange); font-weight: 600; font-size: 1.1rem;">— Matthieu 20:28</footer>
+                    <footer style="color: rgba(255, 255, 255, 0.7); font-weight: 400; font-size: 1rem;">Matthieu 20:28</footer>
                 </blockquote>
-                <blockquote style="border-left: 4px solid var(--orange); padding-left: 1.5rem; margin: 0; text-align: left;">
-                    <p style="font-size: 1.3rem; line-height: 1.8; color: rgba(255, 255, 255, 0.95); margin-bottom: 0.5rem; font-style: italic;">
+                <blockquote style="margin: 0; text-align: center;">
+                    <p style="font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; color: #ffffff; margin-bottom: 0.75rem; font-weight: 600; letter-spacing: -0.02em;">
                         "Le plus grand parmi vous doit être votre serviteur."
                     </p>
-                    <footer style="color: var(--orange); font-weight: 600; font-size: 1.1rem;">— Matthieu 23:11</footer>
+                    <footer style="color: rgba(255, 255, 255, 0.7); font-weight: 400; font-size: 1rem;">Matthieu 23:11</footer>
                 </blockquote>
             </div>
         </div>
     </section>
 
     <!-- About ESLC Section -->
-    <section class="section" style="background: var(--light-gray); padding: 3rem 0;">
+    <section class="section" style="background: #ffffff; padding: 6rem 0;">
         <div class="container">
             <div class="section-header text-center">
-                <h2 class="section-title">À Propos de Nous</h2>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
-                    Le 'CENTRE DE LEADERSHIP SERVITEUR ÉTHIQUE', abrégé "CLSE asbl" ou 'ETHICAL SERVANT LEADERSHIP CENTER", 'ESLC asbl', en anglais, est une association sans but lucratif créée par des citoyens congolais soucieux de contribuer efficacement aux défis majeurs auxquels la société dans laquelle ils vivent est confrontée, notamment les questions de leadership éthique et de corruption.
+                <p style="color: #86868b; font-size: 0.875rem; font-weight: 400; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">À Propos</p>
+                <h2 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem);">Centre de Leadership Serviteur Éthique</h2>
+                <p class="section-description" style="max-width: 720px; margin: 1rem auto 0; font-size: 1.125rem; line-height: 1.5;">
+                    Une association sans but lucratif créée par des citoyens congolais engagés à relever les défis majeurs du leadership éthique et de la gouvernance en République Démocratique du Congo.
                 </p>
             </div>
         </div>
@@ -624,6 +662,7 @@
             const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
             navToggle.setAttribute('aria-expanded', !isExpanded);
             navMenu.classList.toggle('show');
+            document.body.classList.toggle('menu-open');
         });
         
         // Close mobile menu when clicking outside

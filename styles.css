@@ -169,7 +169,7 @@ p {
 }
 
 .logo img {
-  height: 44px;
+  height: 60px;
   width: auto;
   transition: var(--transition);
 }
@@ -194,7 +194,7 @@ p {
   color: var(--dark);
   text-decoration: none;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding: 0.5rem 0.75rem;
   border-radius: 0;
   transition: var(--transition);
